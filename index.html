@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="robots" content="noindex">
-  <title>Janucá en el Golán | Plan Familiar 5787</title>
+  <title>Janucá en el Golán v4 | Yurta en Moshav Natur y Bar Mitzvá</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -22,6 +22,7 @@
       --emerald-light: #34d399;
       --purple: #a855f7;
       --purple-light: #c084fc;
+      --sky: #38bdf8;
       --text-main: #f8fafc;
       --text-muted: #94a3b8;
       --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -83,7 +84,7 @@
       color: var(--gold-light);
       padding: 8px 16px;
       border-radius: 20px;
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 700;
       margin-bottom: 14px;
     }
@@ -98,41 +99,40 @@
     }
 
     .cover-lead {
-      font-size: 17px;
+      font-size: 16px;
       color: #cbd5e1;
-      line-height: 1.6;
-      margin-bottom: 20px;
+      line-height: 1.55;
+      margin-bottom: 18px;
     }
 
     .chips-group {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 8px;
       margin-bottom: 20px;
     }
 
     .chip-item {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--border-card-inner);
-      border-radius: var(--radius-sm);
-      padding: 12px 14px;
-      font-size: 16px;
-      font-weight: 600;
-      color: #f1f5f9;
       display: flex;
       align-items: center;
-      gap: 10px;
-      text-align: left;
+      justify-content: center;
+      gap: 8px;
+      background: var(--bg-card-inner);
+      border: 1px solid var(--border-card-inner);
+      padding: 8px 14px;
+      border-radius: 12px;
+      font-size: 14.5px;
+      color: #e2e8f0;
     }
 
-    /* Resumen 5 líneas arriba */
+    /* Resumen 5 líneas */
     .summary-card {
-      background: rgba(15, 23, 42, 0.96);
-      border: 2px solid var(--gold-primary);
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.12) 0%, rgba(17, 24, 39, 0.95) 100%);
+      border: 1px solid rgba(245, 158, 11, 0.35);
       border-radius: var(--radius-lg);
       padding: 22px 18px;
       margin-bottom: 22px;
-      box-shadow: 0 0 25px rgba(245, 158, 11, 0.2);
+      box-shadow: var(--shadow-card);
     }
 
     .summary-badge {
@@ -141,20 +141,20 @@
       gap: 6px;
       background: var(--gold-gradient);
       color: #0f172a;
-      font-size: 16px;
       font-weight: 800;
-      padding: 5px 12px;
-      border-radius: 12px;
+      font-size: 13px;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      margin-bottom: 14px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 12px;
     }
 
     .summary-title {
       font-size: 22px;
       font-weight: 800;
       color: #ffffff;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
 
     .summary-list {
@@ -164,139 +164,127 @@
     }
 
     .summary-line {
-      font-size: 16px;
-      line-height: 1.55;
-      color: #f8fafc;
-      background: rgba(255, 255, 255, 0.04);
-      padding: 12px 14px;
-      border-radius: var(--radius-sm);
-      border-left: 4px solid var(--gold-primary);
+      font-size: 15.5px;
+      line-height: 1.5;
+      color: #e2e8f0;
+      padding-left: 12px;
+      border-left: 3px solid var(--gold-primary);
     }
 
     .summary-line strong {
       color: var(--gold-light);
       display: block;
-      font-size: 16px;
-      margin-bottom: 3px;
+      font-size: 14px;
       text-transform: uppercase;
       letter-spacing: 0.03em;
+      margin-bottom: 2px;
     }
 
-    /* Tarjeta A Tener En Cuenta */
+    /* Note Card */
     .note-card {
-      background: rgba(88, 28, 135, 0.25);
-      border: 2px solid var(--purple);
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.35);
       border-radius: var(--radius-lg);
-      padding: 20px 18px;
+      padding: 18px;
       margin-bottom: 22px;
-      box-shadow: 0 4px 20px rgba(168, 85, 247, 0.2);
     }
 
     .note-header {
       display: flex;
       align-items: center;
-      gap: 10px;
-      margin-bottom: 10px;
+      gap: 8px;
+      margin-bottom: 8px;
     }
 
     .note-header h3 {
-      font-size: 20px;
-      font-weight: 800;
-      color: #f3e8ff;
-    }
-
-    .note-header span {
-      font-size: 24px;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--emerald-light);
     }
 
     .note-card p {
-      font-size: 16px;
-      color: #e9d5ff;
-      line-height: 1.6;
+      font-size: 15px;
+      color: #d1fae5;
+      line-height: 1.55;
     }
 
-    /* Advertencias del Deck */
+    /* Alert Card */
     .alert-card {
-      background: rgba(245, 158, 11, 0.12);
-      border: 1px solid rgba(245, 158, 11, 0.35);
-      border-left: 4px solid var(--gold-primary);
-      border-radius: var(--radius-md);
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      border-radius: var(--radius-lg);
       padding: 18px;
       margin-bottom: 22px;
-      font-size: 16px;
-      color: #fef3c7;
-      line-height: 1.6;
     }
 
     .alert-card-header {
       display: flex;
       align-items: center;
       gap: 8px;
-      font-size: 18px;
-      font-weight: 800;
-      color: var(--gold-light);
-      margin-bottom: 10px;
+      margin-bottom: 8px;
+      font-size: 16px;
+      font-weight: 700;
+      color: #f87171;
     }
 
     .alert-card p {
-      margin-bottom: 12px;
+      font-size: 14.5px;
+      color: #fecaca;
+      line-height: 1.5;
+      margin-bottom: 8px;
     }
 
     .alert-card p:last-child {
       margin-bottom: 0;
     }
 
-    .alert-card strong {
-      color: var(--gold-light);
-    }
-
-    /* Quick Nav Anchors */
+    /* Navegación Rápida */
     .quick-nav {
       background: var(--bg-card);
       border: 1px solid var(--border-card);
-      border-radius: var(--radius-md);
+      border-radius: var(--radius-lg);
       padding: 16px 14px;
-      margin-bottom: 26px;
+      margin-bottom: 24px;
     }
 
     .quick-nav-title {
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 700;
-      color: var(--text-muted);
       text-transform: uppercase;
       letter-spacing: 0.05em;
+      color: var(--text-muted);
       margin-bottom: 12px;
       text-align: center;
     }
 
     .quick-nav-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
     }
 
     .quick-nav-btn {
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid var(--border-card-inner);
-      color: var(--text-main);
-      padding: 12px 10px;
-      border-radius: var(--radius-sm);
-      font-size: 16px;
-      font-weight: 600;
-      text-decoration: none;
-      text-align: center;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      gap: 6px;
+      gap: 4px;
+      background: var(--bg-card-inner);
+      border: 1px solid var(--border-card-inner);
+      padding: 10px 4px;
+      border-radius: 10px;
+      color: #e2e8f0;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      text-align: center;
+      transition: all 0.2s;
     }
 
-    .quick-nav-btn:active {
-      background: rgba(245, 158, 11, 0.25);
-      border-color: var(--gold-primary);
+    .quick-nav-btn span {
+      font-size: 20px;
     }
 
-    /* Cards */
+    /* Card General */
     .card {
       background: var(--bg-card);
       border: 1px solid var(--border-card);
@@ -310,43 +298,43 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      font-size: 16px;
-      font-weight: 800;
-      color: var(--gold-light);
+      font-size: 13px;
+      font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.05em;
+      color: var(--gold-light);
       margin-bottom: 8px;
     }
 
     .card-title {
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 800;
+      line-height: 1.25;
       color: #ffffff;
-      line-height: 1.28;
-      letter-spacing: -0.01em;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .card-subtitle {
-      font-size: 16px;
-      color: #cbd5e1;
-      line-height: 1.6;
+      font-size: 15px;
+      color: #94a3b8;
+      line-height: 1.5;
       margin-bottom: 18px;
     }
 
-    /* Photos */
+    /* Photo container */
     .photo-container {
       position: relative;
+      width: 100%;
+      height: 220px;
       border-radius: var(--radius-md);
       overflow: hidden;
-      margin: 16px 0;
-      background: #0f172a;
+      margin-bottom: 18px;
+      border: 1px solid var(--border-card-inner);
     }
 
     .photo-container img {
       width: 100%;
-      height: auto;
-      max-height: 290px;
+      height: 100%;
       object-fit: cover;
       display: block;
     }
@@ -355,145 +343,131 @@
       position: absolute;
       top: 10px;
       left: 10px;
-      background: rgba(15, 23, 42, 0.9);
-      border: 1px solid rgba(245, 158, 11, 0.4);
-      color: var(--gold-light);
-      font-size: 16px;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-size: 12px;
       font-weight: 700;
-      text-transform: uppercase;
-      padding: 5px 12px;
-      border-radius: 12px;
-      backdrop-filter: blur(6px);
-      -webkit-backdrop-filter: blur(6px);
     }
 
     .photo-caption {
-      font-size: 16px;
-      color: #cbd5e1;
-      padding: 10px 14px;
-      background: rgba(15, 23, 42, 0.95);
-      border-top: 1px solid var(--border-card-inner);
-      font-weight: 500;
-      line-height: 1.45;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px 12px 10px;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+      font-size: 13px;
+      color: #e2e8f0;
+      line-height: 1.35;
     }
 
-    /* Price Badge */
-    .price-pill {
-      display: inline-flex;
-      align-items: baseline;
-      gap: 5px;
-      background: rgba(16, 185, 129, 0.15);
-      border: 1px solid rgba(16, 185, 129, 0.35);
-      color: #34d399;
-      padding: 7px 14px;
-      border-radius: 16px;
-      font-weight: 700;
-      font-size: 16px;
-      margin-bottom: 14px;
-    }
-
-    .price-pill .currency {
-      font-size: 20px;
-      font-weight: 800;
-    }
-
-    .price-pill .note {
-      font-size: 16px;
-      font-weight: 600;
-      color: #a7f3d0;
-    }
-
-    /* Stacked Features */
+    /* Stacked feature cards */
     .stacked-group {
       display: flex;
       flex-direction: column;
       gap: 12px;
-      margin: 16px 0;
+      margin-bottom: 16px;
     }
 
     .feature-card {
       background: var(--bg-card-inner);
       border: 1px solid var(--border-card-inner);
       border-radius: var(--radius-md);
-      padding: 16px;
+      padding: 14px;
     }
 
     .feature-header {
       display: flex;
       align-items: center;
-      gap: 8px;
-      font-size: 16px;
+      gap: 6px;
+      font-size: 13px;
       font-weight: 700;
-      color: var(--gold-light);
-      margin-bottom: 4px;
       text-transform: uppercase;
       letter-spacing: 0.03em;
+      color: var(--text-muted);
+      margin-bottom: 4px;
     }
 
     .feature-value {
       font-size: 17px;
-      font-weight: 700;
+      font-weight: 800;
       color: #ffffff;
-      line-height: 1.35;
       margin-bottom: 4px;
     }
 
     .feature-desc {
-      font-size: 16px;
-      color: #94a3b8;
-      line-height: 1.55;
+      font-size: 14.5px;
+      color: #cbd5e1;
+      line-height: 1.45;
     }
 
-    .feature-desc em {
-      color: #e2e8f0;
-      font-style: normal;
-      font-weight: 600;
-    }
-
-    /* Inline Alert */
     .inline-alert {
       background: rgba(245, 158, 11, 0.1);
-      border-left: 4px solid var(--gold-primary);
+      border-left: 3px solid var(--gold-primary);
+      padding: 12px 14px;
       border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-      padding: 14px 16px;
-      font-size: 16px;
-      color: #fef3c7;
-      margin-top: 16px;
-      line-height: 1.55;
+      font-size: 14px;
+      color: #fde68a;
+      line-height: 1.45;
+      margin-top: 14px;
     }
 
     .inline-alert strong {
-      color: var(--gold-light);
+      color: #ffffff;
     }
 
-    /* Timeline */
+    /* Price Pills */
+    .price-pill {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 4px;
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      padding: 4px 10px;
+      border-radius: 8px;
+    }
+
+    .price-pill .currency {
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--emerald-light);
+    }
+
+    .price-pill .note {
+      font-size: 12px;
+      color: #94a3b8;
+    }
+
+    /* Timelines */
     .timeline {
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      margin: 16px 0;
+      gap: 14px;
+      position: relative;
+      margin-bottom: 16px;
     }
 
     .timeline-item {
       display: flex;
       gap: 12px;
-      align-items: flex-start;
-      background: var(--bg-card-inner);
-      border: 1px solid var(--border-card-inner);
-      border-radius: var(--radius-md);
-      padding: 14px 12px;
     }
 
     .timeline-time {
-      flex: 0 0 64px;
-      font-weight: 800;
-      font-size: 16px;
-      color: var(--gold-light);
-      background: rgba(245, 158, 11, 0.15);
+      flex-shrink: 0;
+      width: 64px;
       padding: 6px 4px;
-      border-radius: 6px;
-      text-align: center;
+      background: rgba(245, 158, 11, 0.15);
       border: 1px solid rgba(245, 158, 11, 0.3);
+      border-radius: var(--radius-sm);
+      color: var(--gold-light);
+      font-size: 13.5px;
+      font-weight: 800;
+      text-align: center;
+      height: fit-content;
     }
 
     .timeline-body {
@@ -501,130 +475,112 @@
     }
 
     .timeline-title {
-      font-size: 17px;
+      font-size: 15.5px;
       font-weight: 700;
       color: #ffffff;
-      margin-bottom: 4px;
+      margin-bottom: 2px;
     }
 
     .timeline-sub {
-      font-size: 16px;
-      color: #94a3b8;
-      line-height: 1.5;
+      font-size: 14px;
+      color: #cbd5e1;
+      line-height: 1.45;
     }
 
-    /* Checklists */
-    .check-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      margin: 16px 0;
-    }
-
-    .check-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      font-size: 16px;
-      line-height: 1.55;
+    /* Scenario Card */
+    .scenario-card {
       background: var(--bg-card-inner);
-      padding: 14px;
-      border-radius: var(--radius-md);
       border: 1px solid var(--border-card-inner);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      margin-bottom: 14px;
     }
 
-    .check-box {
-      width: 26px;
-      height: 26px;
-      background: rgba(16, 185, 129, 0.2);
-      color: var(--emerald-light);
+    .scenario-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      border-bottom: 1px solid var(--border-card-inner);
+      padding-bottom: 8px;
+    }
+
+    .scenario-badge {
+      font-size: 12.5px;
+      font-weight: 800;
+      padding: 3px 8px;
       border-radius: 6px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 800;
-      font-size: 16px;
-      flex-shrink: 0;
-      margin-top: 2px;
+      text-transform: uppercase;
     }
 
-    .step-number {
-      width: 30px;
-      height: 30px;
-      background: var(--gold-gradient);
-      color: #0f172a;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 800;
-      font-size: 16px;
-      flex-shrink: 0;
-      margin-top: 2px;
+    .scenario-badge.scenario-a {
+      background: rgba(56, 189, 248, 0.2);
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      color: var(--sky);
     }
 
-    /* Presupuesto: Tarjetas apiladas en vez de tabla */
+    .scenario-badge.scenario-b {
+      background: rgba(168, 85, 247, 0.2);
+      border: 1px solid rgba(168, 85, 247, 0.4);
+      color: var(--purple-light);
+    }
+
+    /* Costs Group */
     .cost-group {
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      margin: 16px 0;
+      gap: 10px;
     }
 
     .cost-card {
       background: var(--bg-card-inner);
       border: 1px solid var(--border-card-inner);
       border-radius: var(--radius-md);
-      padding: 16px;
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
+      padding: 12px 14px;
     }
 
     .cost-header-row {
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
-      gap: 8px;
+      align-items: center;
+      margin-bottom: 4px;
     }
 
     .cost-concept {
-      font-size: 17px;
+      font-size: 15px;
       font-weight: 700;
       color: #ffffff;
     }
 
     .cost-amount {
-      font-size: 19px;
+      font-size: 17px;
       font-weight: 800;
-      color: var(--emerald-light);
-      white-space: nowrap;
+      color: var(--gold-light);
     }
 
     .cost-detail {
-      font-size: 16px;
+      font-size: 13.5px;
       color: #94a3b8;
-      line-height: 1.5;
+      line-height: 1.4;
     }
 
     .cost-total-card {
-      background: rgba(16, 185, 129, 0.12);
-      border: 2px solid var(--emerald);
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.18) 0%, rgba(15, 23, 42, 0.95) 100%);
+      border: 1px solid rgba(16, 185, 129, 0.5);
       border-radius: var(--radius-md);
-      padding: 18px;
-      margin-top: 8px;
+      padding: 16px;
+      margin-top: 6px;
     }
 
     .cost-total-header {
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
+      align-items: center;
       margin-bottom: 6px;
     }
 
     .cost-total-title {
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 800;
       color: #ffffff;
       text-transform: uppercase;
@@ -638,9 +594,55 @@
     }
 
     .cost-total-note {
-      font-size: 16px;
+      font-size: 14px;
       color: #cbd5e1;
-      line-height: 1.55;
+      line-height: 1.45;
+    }
+
+    /* Check List */
+    .check-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 12px 0;
+    }
+
+    .check-item {
+      display: flex;
+      gap: 12px;
+      font-size: 15px;
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
+
+    .check-box {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      background: rgba(16, 185, 129, 0.2);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: var(--emerald-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 14px;
+    }
+
+    .step-number {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--gold-gradient);
+      color: #0f172a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 14px;
     }
 
     /* Botones grandes */
@@ -650,17 +652,17 @@
       justify-content: center;
       gap: 10px;
       width: 100%;
-      min-height: 54px;
-      padding: 15px 20px;
+      min-height: 52px;
+      padding: 14px 18px;
       border-radius: var(--radius-md);
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 700;
       text-decoration: none;
       border: none;
       cursor: pointer;
       text-align: center;
       box-sizing: border-box;
-      margin: 12px 0;
+      margin: 10px 0;
     }
 
     .btn-primary {
@@ -669,43 +671,39 @@
       box-shadow: 0 4px 15px rgba(245, 158, 11, 0.35);
     }
 
-    .btn-primary:active {
-      transform: scale(0.98);
-      opacity: 0.9;
-    }
-
     .btn-secondary {
       background: rgba(255, 255, 255, 0.08);
       border: 1px solid var(--border-card);
       color: var(--text-main);
     }
 
-    .btn-secondary:active {
-      background: rgba(255, 255, 255, 0.15);
-      transform: scale(0.98);
-    }
-
-    /* SVG Map responsive */
-    .map-box {
-      width: 100%;
-      border-radius: var(--radius-md);
-      overflow: hidden;
-      border: 1px solid var(--border-card-inner);
-      background: #0b1323;
-      margin: 16px 0;
-    }
-
-    .map-box svg {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
     footer {
       text-align: center;
       padding: 24px 10px 10px;
       color: #64748b;
-      font-size: 16px;
+      font-size: 14px;
+    }
+
+    .btn-nav {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      color: #38bdf8;
+      padding: 5px 12px;
+      border-radius: var(--radius-sm);
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .btn-nav:hover, .btn-nav:active {
+      background: rgba(245, 158, 11, 0.25);
+      border-color: var(--gold-primary);
+      color: #fbbf24;
     }
   </style>
 </head>
@@ -715,687 +713,639 @@
   <!-- ==================== COVER / PORTADA ==================== -->
   <header class="cover-box" id="inicio">
     <div class="cover-pill">
-      <span>🕎</span> Janucá 5787 • Propuesta Familiar Privada
+      <span>🕎</span> Janucá 5787 • Plan Familiar v4
     </div>
     <h1 class="cover-title">Janucá en las Alturas del Golán</h1>
     <p class="cover-lead">
-      2 noches inolvidables de glamping entre olivos milenarios, buitres sobre el cañón, chocolate caliente y velas encendidas bajo las estrellas del norte.
+      Edición Yurta & Granja: 1 noche en yurta mongola tradicional en Moshav Natur (₪880 verificado), Cascada Gamla de 51m, prensa talmúdica de aceite, taller de chocolate De Karina y viaje directo al Bar Mitzvá de David en Salón LUNA (Or Akiva).
     </p>
     <div class="chips-group">
-      <div class="chip-item"><span>📅</span> Mié 9 al Vie 11 Dic 2026</div>
+      <div class="chip-item"><span>📅</span> Mié 9 al Jue 10 Dic 2026 (1 noche)</div>
       <div class="chip-item"><span>👨‍👩‍👧‍👦</span> 2 adultos + 4 niños (10, 8, 6 y 3 años)</div>
-      <div class="chip-item"><span>🚐</span> Olive GlampVan (Ma'ale Gamla)</div>
-      <div class="chip-item"><span>🕍</span> 100% Kosher & Shabat Compatible</div>
+      <div class="chip-item"><span>⛺</span> Yurta en Moshav Natur (₪880 verificado)</div>
+      <div class="chip-item"><span>🎧</span> Bar Mitzvá David: Jue 17:30 (Salón LUNA Or Akiva)</div>
     </div>
-    <a href="#resumen-5-lineas" class="btn-action btn-primary">
-      Ver el plan rápido ↓
+    <a href="#alojamiento" class="btn-action btn-primary">
+      Ver la Yurta en Moshav Natur ↓
     </a>
   </header>
-
-  <!-- ==================== RESUMEN DE 5 LÍNEAS ==================== -->
+  
+<!-- ==================== RESUMEN DE 5 LÍNEAS ==================== -->
   <section class="summary-card" id="resumen-5-lineas">
-    <div class="summary-badge">⚡ Resumen en 5 Líneas</div>
-    <h2 class="summary-title">Lo Esencial del Viaje</h2>
+    <div class="summary-badge">⚡ Lo Esencial en 5 Líneas</div>
+    <h2 class="summary-title">Resumen Ejecutivo v4</h2>
     <div class="summary-list">
       <div class="summary-line">
-        <strong>1. Fechas</strong>
-        Miércoles 9 al viernes 11 de diciembre de 2026 (2 noches en Janucá).
+        <strong>1. Alojamiento Nuevo Verificado</strong>
+        Yurta mongola en la granja ecológica Netora (Moshav Natur, Golán Sur). Verificada disponible en Airbnb para el 9→10 dic por <strong>₪880 ILS total</strong> para 6 personas (10 camas individuales).
       </div>
       <div class="summary-line">
-        <strong>2. Salida y Regreso</strong>
-        Salida mié 9-dic a las 14:15 hrs desde Harish / Vuelta vie 11-dic ~13:10 hrs (con 2h 50m de holgura antes de velas de Shabat a las 16:05).
+        <strong>2. Miércoles: Llegar con Luz</strong>
+        Salida de Harish a las 14:00 hrs para llegar a las 15:45 hrs con luz solar plena (atardecer ~16:35). 6ª vela afuera frente al lago Kinneret con farol protector, hot dogs a la parrilla y fogata rústica.
       </div>
       <div class="summary-line">
-        <strong>3. Dónde Dormimos</strong>
-        Olive GlampVan (caravana moderna de alta gama inmersa en huerto de olivos en Moshav Ma'ale Gamla, Golán).
+        <strong>3. Jueves: Paseos del Golán (Sur a Norte)</strong>
+        Natur está a solo 6.1 km (8 min) de Gamla: Cascada de 51m y buitres (09:15–10:45), Pueblo Talmúdico de Katzrin (11:05–12:35, prensa de aceite de Janucá), almuerzo y Taller en Chocolatería De Karina en Ein Zivan (13:45–15:00).
       </div>
       <div class="summary-line">
-        <strong>4. Quiénes Viajan</strong>
-        2 adultos + 4 niños (10, 8, 6 y 3 años; 5 huéspedes cotizados, el más chico no paga).
+        <strong>4. Jueves Tarde/Noche: Directo a Salón LUNA</strong>
+        Salida directa a las 15:15 desde Ein Zivan (ya cambiados con ropa de fiesta) hacia Salón LUNA en Or Akiva, llegando 17:30 (buffer 30 min). Montaje 18:00 y fiesta 19:00. La 7ª vela se enciende en casa en Harish.
       </div>
       <div class="summary-line">
-        <strong>5. Total Estimado</strong>
-        ₪2.766 ILS todo incluido (rango ₪2.500 a ₪3.200 según paseos y entradas).
+        <strong>5. Presupuesto Total Consolidado</strong>
+        <strong>~₪1.600 ILS total familia</strong> (rango ₪1.500 a ₪1.700 ILS), con tarifas 100% verificadas y sin especulaciones.
       </div>
     </div>
   </section>
-
-  <!-- ==================== A TENER EN CUENTA (BAR MITZVÁ) ==================== -->
+  
+<!-- ==================== SOLUCIÓN DEL BAR MITZVÁ ==================== -->
   <section class="note-card">
     <div class="note-header">
-      <span>📌</span>
-      <h3>A tener en cuenta</h3>
+      <span>🎉</span>
+      <h3>¡Bar Mitzvá de David Confirmado!</h3>
     </div>
     <p>
-      Si vamos a este viaje, no podríamos ir al bar mitzvá de David, el hijo de Tania (que se celebra el jueves 10 de diciembre).
+      Dato confirmado: la fiesta de David es el <strong>jueves 10-dic a las 19:00 hrs en el salón LUNA (Or Akiva)</strong>. Alan y la familia viajan directo desde Ein Zivan a las 15:15 (ya cambiados con ropa de fiesta), llegando a LUNA a las <strong>17:30 hrs</strong> (buffer de 30 min) para iniciar el montaje a las <strong>18:00 hrs</strong>. La 7ª vela se enciende al volver a casa tras la fiesta.
     </p>
   </section>
 
-  <!-- ==================== ADVERTENCIAS DEL DECK ==================== -->
+  
+<!-- ==================== ADVERTENCIAS CLAVE ==================== -->
   <section class="alert-card">
     <div class="alert-card-header">
-      <span>⚠️</span> Advertencias Clave del Plan
+      <span>⚠️</span> Verificación & Datos Importantes v4
     </div>
     <p>
-      <strong>GlampVan a recotizar para 9–11 dic:</strong> El valor de ₪1.434 (₪717/noche) corresponde a la tarifa base regular de Airbnb. Al momento de confirmar la reserva, hay que recotizar las fechas exactas del 9 al 11 de diciembre en la plataforma antes de pagar.
+      <strong>Alojamiento verificado en vivo (₪880):</strong> La yurta en Moshav Natur fue verificada en la API de Airbnb al 9-nov-2026: disponible sin bloqueo (`available: true`, estancia mínima 1 noche, cotización exacta ₪880.00 ILS total para 2 adultos y 4 niños).
     </p>
     <p>
-      <strong>Capacidad y pasajeros (5 vs 6 personas):</strong> En el viaje somos 6 en total (2 adultos + 4 niños). En la web de Airbnb la caravana tiene un tope formal de 4 huéspedes, pero el anfitrión (Ori) autoriza expresamente al 5º huésped en el comedor abatible para niño. El más chico (3 años) no paga ni cuenta formalmente como huésped en la van ni en parques. Al reservar se seleccionan 4 personas y se le avisa por mensaje al host.
+      <strong>Datos por confirmar con el anfitrión (Orly):</strong>
+      <br>• <em>Check-out del jueves:</em> Hora habitual 10:00 u 11:00 AM (<strong>por confirmar con el anfitrión</strong>).
+      <br>• <em>Ropa de cama y toallas:</em> Airbnb marca "Essentials no incluido"; llevar sábanas/sacos propios y toallas familiares (<strong>por confirmar con el anfitrión si suministran bajo pedido</strong>).
+      <br>• <em>Leña:</em> Para la estufa interior y fogón exterior (<strong>por confirmar con el anfitrión si está incluida o llevar propia</strong>).
+      <br>• <em>Portón del moshav:</em> Coordinar llamada al arribar para apertura del portón de seguridad de Natur.
     </p>
     <p>
-      <strong>Velas de Janucá AFUERA:</strong> Por protocolo de seguridad de las caravanas, está prohibido prender fuego o velas adentro. Se enciende en el patio del huerto a las ~16:35 hrs con una caja de vidrio protectora antiviento.
+      <strong>Velas de Janucá y Calefacción:</strong> Doble sistema de calefacción garantizado en la yurta (aire acondicionado potente frío/calor + chimenea rústica a leña). Encendido de la 6ª vela en el patio exterior con farol/caja de vidrio antiviento.
     </p>
   </section>
-
-  <!-- ==================== ÍNDICE RÁPIDO ==================== -->
+  
+<!-- ==================== ÍNDICE RÁPIDO ==================== -->
   <nav class="quick-nav">
     <div class="quick-nav-title">Navegación Rápida</div>
     <div class="quick-nav-grid">
       <a href="#alojamiento" class="quick-nav-btn"><span>🚐</span> Alojamiento</a>
-      <a href="#itinerario" class="quick-nav-btn"><span>🗺️</span> Itinerario</a>
-      <a href="#paseos" class="quick-nav-btn"><span>🦅</span> Paseos</a>
-      <a href="#presupuesto" class="quick-nav-btn"><span>💰</span> Presupuesto</a>
+      <a href="#itinerario" class="quick-nav-btn"><span>🗺️</span> Día 1</a>
+      <a href="#paseos" class="quick-nav-btn"><span>🦅</span> Paseos Jue</a>
+      <a href="#barmitzva" class="quick-nav-btn"><span>🎧</span> Bar Mitzvá</a>
+      <a href="#presupuesto" class="quick-nav-btn"><span>💰</span> Costos</a>
       <a href="#cronograma" class="quick-nav-btn"><span>⏱️</span> Horarios</a>
-      <a href="#reserva" class="quick-nav-btn"><span>🚀</span> Reservar</a>
     </div>
   </nav>
 
-  <!-- ==================== SLIDE 2: RESUMEN EJECUTIVO ==================== -->
+  
+<!-- ==================== DATOS ESENCIALES ==================== -->
   <section class="card" id="resumen">
-    <span class="card-tagline"><span>📋</span> Datos Esenciales</span>
-    <h2 class="card-title">Resumen Ejecutivo del Viaje</h2>
-    <p class="card-subtitle">Una escapada diseñada con precisión para combinar emoción para los niños, comodidad familiar y respeto riguroso de tiempos y halajá.</p>
+    <span class="card-tagline"><span>📋</span> Parámetros del Viaje</span>
+    <h2 class="card-title">Resumen Logístico v4</h2>
+    <p class="card-subtitle">Diseñado para conjugar aventura para los 4 niños, comodidad y puntualidad para el evento de la noche.</p>
 
     <div class="photo-container">
-      <img src="img/golan_hermon.jpg" alt="Vista del Golán con Hermon nevado al fondo" loading="lazy">
-      <span class="photo-badge">Visión General</span>
-      <div class="photo-caption">Colinas del Golán con el Monte Hermón de fondo en invierno.</div>
+      <img src="img/yurta/yurta_02.jpg" alt="Yurta en Moshav Natur con vista al Kinneret" loading="lazy">
+      <span class="photo-badge">Moshav Natur (Golán Sur)</span>
+      <div class="photo-caption">Finca ecológica Netora con vistas panorámicas sobre el Mar de Galilea.</div>
     </div>
 
     <div class="stacked-group">
       <div class="feature-card">
         <div class="feature-header"><span>👥</span> Quiénes viajan</div>
-        <div class="feature-value">Familia (6 personas)</div>
-        <div class="feature-desc">2 adultos + 3 niños escolares (10, 8, 6 años) + 1 niño de 3 años. <em>Cotizado para 5 huéspedes.</em></div>
+        <div class="feature-value">2 adultos + 4 niños (6 en total)</div>
+        <div class="feature-desc">Edades: 10, 8, 6 y 3 años. La yurta cuenta con 10 camas individuales. El niño de 3 años entra gratis a parques.</div>
       </div>
       <div class="feature-card">
         <div class="feature-header"><span>⏱️</span> Salida desde Harish</div>
-        <div class="feature-value">Miércoles 9-Dic ~14:15 hrs</div>
-        <div class="feature-desc">Desde Mitzpe Ilan en auto propio. Llegada a Ma'ale Gamla a las 16:00 antes de la puesta de sol.</div>
+        <div class="feature-value">Miércoles 9-Dic a las 14:00 hrs</div>
+        <div class="feature-desc">Llegada a Moshav Natur a las <strong>15:45 hrs</strong> con luz solar plena (50 min antes del atardecer 16:35).</div>
       </div>
       <div class="feature-card">
-        <div class="feature-header"><span>🕯️</span> Janucá en destino</div>
-        <div class="feature-value">6ª y 7ª noche</div>
-        <div class="feature-desc">Puesta de sol ~16:35. Encendido afuera en caja de vidrio con fogata familiar.</div>
+        <div class="feature-header"><span>🕯️</span> Janucá en el Golán</div>
+        <div class="feature-value">6ª Vela (Mié 9) a las ~16:35 hrs</div>
+        <div class="feature-desc">Encendido afuera con caja protectora de vidrio + hot dogs a la parrilla y fogata rústica.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-header"><span>🏡</span> Retorno para Shabat</div>
-        <div class="feature-value">Viernes 11-Dic 13:00–13:15 hrs</div>
-        <div class="feature-desc">Llegada a Harish a más tardar 13:30. Velas de Shabat Janucá a las 16:05 (¡con 2h 45m de holgura!).</div>
+        <div class="feature-header"><span>🎧</span> Cierre Confirmado</div>
+        <div class="feature-value">Jueves 10: Directo a LUNA</div>
+        <div class="feature-desc">Salón LUNA (Or Akiva). Salida directa del Golán 15:15, llegada 17:30 (buffer), 18:00 montaje y 19:00 fiesta.</div>
       </div>
-    </div>
-
-    <div class="inline-alert">
-      <strong>Regla de oro:</strong> Ningún tramo supera los 35 minutos una vez en el Golán, permitiendo ritmos amables para los más chicos y cero estrés antes de Shabat.
     </div>
   </section>
-
-  <!-- ==================== SLIDE 3: KASHRUT, VELAS Y MINYÁN ==================== -->
+  
+<!-- ==================== LOGÍSTICA KOSHER & JANUCÁ ==================== -->
   <section class="card" id="halaja">
     <span class="card-tagline"><span>✡️</span> Logística Kosher & Janucá</span>
-    <h2 class="card-title">Kashrut, Velas y Minyán</h2>
-    <p class="card-subtitle">Todo resuelto para disfrutar con tranquilidad espiritual y práctica.</p>
+    <h2 class="card-title">Kashrut, Velas y Vida Judía en Natur</h2>
+    <p class="card-subtitle">Moshav Natur es una comunidad mixta religiosa-secular (דתיים וחילונים), lo que asegura entorno acogedor, sinagoga y respeto mutuo.</p>
 
     <div class="photo-container">
-      <img src="img/chanukah_menorah.jpg" alt="Januquiá tradicional con aceite de oliva" loading="lazy">
-      <span class="photo-badge">Espiritualidad & Halajá</span>
-      <div class="photo-caption">Encendido con aceite de oliva en el huerto: pura atmósfera de Janucá.</div>
+      <img src="img/chanukah_menorah.jpg" alt="Januquiá tradicional encendida" loading="lazy">
+      <span class="photo-badge">6ª Vela en Natur</span>
+      <div class="photo-caption">Atmósfera íntima y festiva bajo el cielo estrellado del Golán.</div>
     </div>
 
     <div class="stacked-group">
       <div class="feature-card">
-        <div class="feature-header"><span>🕯️</span> Velas de Janucá AFUERA</div>
-        <div class="feature-value">Caja de vidrio protectora</div>
-        <div class="feature-desc">La caravana prohíbe fuego interior. Se prende en el patio del huerto a las ~16:35 en januquiá cerrada antiviento.</div>
+        <div class="feature-header"><span>🕯️</span> 6ª Vela de Janucá (Mié 9)</div>
+        <div class="feature-value">Afuera en caja de vidrio (~16:35)</div>
+        <div class="feature-desc">Puesta de sol ~16:35 hrs. Encendido en la mesa del patio frente a la yurta con farol antiviento para proteger las llamas.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-header"><span>🍳</span> Comida Kosher</div>
-        <div class="feature-value">Llevada de casa + Van</div>
-        <div class="feature-desc">Cocina a gas, microondas y refrigerador disponibles. Ollas y vajilla propia desde Harish.</div>
+        <div class="feature-header"><span>🍽️</span> Kosher en la Yurta (Qué llevar)</div>
+        <div class="feature-value">Cocina no kasher • Vajilla propia</div>
+        <div class="feature-desc">Llevar platos, vasos y cubiertos descartables, ollas propias para las hornallas a gas y <strong>papel aluminio grueso</strong> (doble capa) para la parrilla BBQ.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-header"><span>🛒</span> Supermercado Mehadrin</div>
-        <div class="feature-value">A.D. Amar (Bnei Yehuda)</div>
-        <div class="feature-desc">A solo 14 min al sur (Ruta 789). Gran surtido LeMehadrin. Alternativa: Shufersal Deal en Katzrin (20 min).</div>
+        <div class="feature-header"><span>🕍</span> Sinagoga en Moshav Natur</div>
+        <div class="feature-value">Bet Knéset Natur (en el moshav)</div>
+        <div class="feature-desc">Sinagoga comunitaria activa con tefilot diarias (Shajarit, Minjá y Arvit). Minyanim matutinos adicionales en Hispin (a 8 min).</div>
       </div>
       <div class="feature-card">
-        <div class="feature-header"><span>🕍</span> Minyán Jabad Cercano</div>
-        <div class="feature-value">Bnei Yehuda & Jispin</div>
-        <div class="feature-desc">Jabad Bnei Yehuda (Rabino Mendy Gorelik, Shajarit 07:15). En Jispin (a 10 min): sinagoga central con minyanim continuos.</div>
+        <div class="feature-header"><span>🛒</span> Supermercados Kosher</div>
+        <div class="feature-value">Minimarket local + Bnei Yehuda</div>
+        <div class="feature-desc">Makolet en Natur para básicos. Supermercado Kosher LeMehadrin A.D. Amar en Bnei Yehuda (a 12 min) para salchichas, pan y carbón.</div>
       </div>
-    </div>
-
-    <div class="inline-alert">
-      <strong>Llevar sí o sí:</strong> Januquiá metálica apta para caja de vidrio o farol antiviento, aceite de oliva puro / velitas gruesas y fósforos largos.
     </div>
   </section>
-
-  <!-- ==================== SLIDE 4: RUTA Y DISTANCIAS ==================== -->
+  
+<!-- ==================== RUTA Y NAVEGACIÓN ==================== -->
   <section class="card" id="ruta">
-    <span class="card-tagline"><span>🗺️</span> Navegación y Rutas</span>
-    <h2 class="card-title">Ruta y Distancias en Auto</h2>
-    <p class="card-subtitle">Ubicación estratégica sobre la ladera este del Kinneret con accesos directos por carreteras asfaltadas y seguras.</p>
-
-    <!-- Mapa SVG esquemático adaptado para móvil -->
-    <div class="map-box">
-      <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-        <rect width="500" height="500" fill="#0b1323"/>
-        <!-- Kinneret -->
-        <path d="M 230 220 C 210 260, 205 320, 240 370 C 265 400, 290 380, 280 340 C 270 300, 275 250, 255 220 Z" fill="#0369a1" opacity="0.45" stroke="#38bdf8" stroke-width="1.5"/>
-        <text x="245" y="310" fill="#7dd3fc" font-size="14" font-weight="700" text-anchor="middle">Kinneret</text>
-        <!-- Roads -->
-        <path d="M 70 430 Q 140 380 210 375" fill="none" stroke="#64748b" stroke-width="3" stroke-dasharray="6,4"/>
-        <path d="M 210 375 Q 285 365 315 285" fill="none" stroke="#f59e0b" stroke-width="3.5"/>
-        <path d="M 315 285 L 340 255 L 335 185 L 380 120" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="4,3"/>
-        <path d="M 315 285 Q 300 370 280 415" fill="none" stroke="#10b981" stroke-width="2.5" stroke-dasharray="4,3"/>
-        <!-- Markers -->
-        <circle cx="70" cy="430" r="7" fill="#ef4444" stroke="#ffffff" stroke-width="2"/>
-        <text x="70" y="455" fill="#f8fafc" font-size="12" font-weight="700" text-anchor="middle">Harish / Mitzpe Ilan</text>
-        <text x="70" y="470" fill="#94a3b8" font-size="11" text-anchor="middle">Origen & Fin</text>
-        <circle cx="315" cy="285" r="9" fill="#f59e0b" stroke="#ffffff" stroke-width="2"/>
-        <text x="330" y="290" fill="#fef08a" font-size="13" font-weight="800">Ma'ale Gamla</text>
-        <text x="330" y="305" fill="#cbd5e1" font-size="11">Olive GlampVan (Base)</text>
-        <circle cx="340" cy="255" r="6" fill="#38bdf8"/>
-        <text x="352" y="258" fill="#e2e8f0" font-size="11" font-weight="600">Gamla (12km)</text>
-        <circle cx="335" cy="185" r="6" fill="#38bdf8"/>
-        <text x="347" y="188" fill="#e2e8f0" font-size="11" font-weight="600">Katzrin (18km)</text>
-        <circle cx="380" cy="120" r="6" fill="#e879f9"/>
-        <text x="392" y="123" fill="#f5d0fe" font-size="11" font-weight="600">Ein Zivan (38km)</text>
-        <circle cx="320" cy="335" r="5" fill="#a7f3d0"/>
-        <text x="332" y="338" fill="#6ee7b7" font-size="11">Bnei Yehuda (Mehadrin)</text>
-        <circle cx="280" cy="415" r="6" fill="#34d399"/>
-        <text x="292" y="420" fill="#a7f3d0" font-size="11" font-weight="600">Hamat Gader (28km)</text>
-        <!-- Legend Box -->
-        <rect x="20" y="20" width="190" height="95" rx="8" fill="rgba(15, 23, 42, 0.9)" stroke="#334155" stroke-width="1"/>
-        <text x="30" y="42" fill="#f59e0b" font-size="12" font-weight="700">Tiempos de Viaje</text>
-        <text x="30" y="62" fill="#cbd5e1" font-size="11">🚗 Harish → Van: 112 km (1h 45m)</text>
-        <text x="30" y="80" fill="#cbd5e1" font-size="11">🦅 Van → Gamla: 12 km (15 min)</text>
-        <text x="30" y="98" fill="#cbd5e1" font-size="11">🍫 Katzrin → Ein Zivan: 20 min</text>
-      </svg>
-    </div>
+    <span class="card-tagline"><span>🗺️</span> Ruta y Distancias con Waze</span>
+    <h2 class="card-title">Tramos de Ruta & Enlaces de Navegación</h2>
+    <p class="card-subtitle">Secuencia óptima de Sur a Norte: Natur está al lado de Gamla (8 min), avanzando sin ningún retroceso hacia Katzrin, Ein Zivan y Or Akiva.</p>
 
     <div class="stacked-group">
       <div class="feature-card">
-        <div class="feature-header"><span>🛣️</span> Tramo de Ida</div>
-        <div class="feature-value">112 km (~1h 45m)</div>
-        <div class="feature-desc">Mitzpe Ilan → Ruta 65 (Afula) → Cruce Golani → Ruta 77 (Tiberias) → Ruta 789 a Ma'ale Gamla.</div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+          <div class="feature-header"><span>🚗</span> Tramo 1 (Miércoles)</div>
+          <a href="https://waze.com/ul?ll=32.84965,35.75925&navigate=yes" target="_blank" class="btn-nav" style="padding: 4px 10px; font-size: 11px;">Waze Yurta ↗</a>
+        </div>
+        <div class="feature-value">Harish → Moshav Natur: 115 km • 1h 45m</div>
+        <div class="feature-desc">Por Ruta 65 hacia Afula, bordeando Kinneret sur y subiendo por Ruta 789/808. Salida 14:00 para llegar <strong>15:45 hrs CON LUZ</strong>.</div>
       </div>
-      <div class="feature-card">
-        <div class="feature-header"><span>🦅</span> A Parque Gamla</div>
-        <div class="feature-value">12 km (15 min)</div>
-        <div class="feature-desc">Subida panorámica directa por Ruta 789 / Ruta 808 hacia la meseta central.</div>
-      </div>
-      <div class="feature-card">
-        <div class="feature-header"><span>🏛️</span> A Katzrin & Ein Zivan</div>
-        <div class="feature-value">18 a 38 km (20 a 35 min)</div>
-        <div class="feature-desc">Carreteras amplias y despejadas (Ruta 808 y Ruta 91). Hermosos paisajes volcánicos.</div>
-      </div>
-      <div class="feature-card">
-        <div class="feature-header"><span>🏠</span> Tramo de Vuelta</div>
-        <div class="feature-value">95 km (~1h 20m)</div>
-        <div class="feature-desc">Descenso sur por Ruta 98/90 (Tzemach) hacia Ruta 65 directo a Harish. Salida 11:45 → Llegada 13:10.</div>
-      </div>
-    </div>
 
-    <div class="inline-alert">
-      <strong>Seguridad al volante:</strong> El auto queda estacionado dentro del predio privado cerrado de la finca en Ma'ale Gamla. Cero problemas de estacionamiento.
+      <div class="feature-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+          <div class="feature-header"><span>🦅</span> Tramo 2 (Jueves Mañana)</div>
+          <a href="https://waze.com/ul?ll=32.9022,35.7425&navigate=yes" target="_blank" class="btn-nav" style="padding: 4px 10px; font-size: 11px;">Waze Gamla ↗</a>
+        </div>
+        <div class="feature-value">Yurta Natur → Reserva Gamla: 6.1 km • 8 min</div>
+        <div class="feature-desc">Subida rápida por Ruta 808 hacia el cañón de Gamla (mirador buitres y cascada de 51m). Salida 09:00, llegada 09:10.</div>
+      </div>
+
+      <div class="feature-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+          <div class="feature-header"><span>🏛️</span> Tramo 3 (Jueves Mediodía)</div>
+          <a href="https://waze.com/ul?ll=32.9892,35.6975&navigate=yes" target="_blank" class="btn-nav" style="padding: 4px 10px; font-size: 11px;">Waze Katzrin ↗</a>
+        </div>
+        <div class="feature-value">Gamla → Pueblo Talmúdico Katzrin: 17.5 km • 18 min</div>
+        <div class="feature-desc">Ruta 808 hacia R87 para llegar a la antigua Katzrin (prensa de aceitunas de basalto y horneado de pitas).</div>
+      </div>
+
+      <div class="feature-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+          <div class="feature-header"><span>🍫</span> Tramo 4 (Jueves Tarde)</div>
+          <a href="https://waze.com/ul?ll=33.0931,35.7833&navigate=yes" target="_blank" class="btn-nav" style="padding: 4px 10px; font-size: 11px;">Waze De Karina ↗</a>
+        </div>
+        <div class="feature-value">Katzrin → De Karina (Ein Zivan): 22 km • 22 min</div>
+        <div class="feature-desc">Ruta 91/98 hacia Kibutz Ein Zivan. Taller infantil de chocolate y cambiarse a ropa de fiesta a las 14:45 hrs.</div>
+      </div>
+
+      <div class="feature-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+          <div class="feature-header"><span>🎉</span> Tramo 5 (Regreso Directo)</div>
+          <a href="https://waze.com/ul?ll=32.515714,34.922477&navigate=yes" target="_blank" class="btn-nav" style="padding: 4px 10px; font-size: 11px; background: rgba(236, 72, 153, 0.2); color: #f472b6; border-color: #f472b6;">Waze LUNA ↗</a>
+        </div>
+        <div class="feature-value">De Karina → Salón LUNA (Or Akiva): 126 km • 1h 55m</div>
+        <div class="feature-desc">Salida directa a las 15:15 por R91/90/65/4 sin pasar por Harish. Llegada 17:30 (buffer 30 min) para montaje 18:00 y fiesta 19:00.</div>
+      </div>
     </div>
   </section>
-
-  <!-- ==================== SLIDE 5: OLIVE GLAMPVAN ==================== -->
+  
+<!-- ==================== ALOJAMIENTO: YURTA EN MOSHAV NATUR ==================== -->
   <section class="card" id="alojamiento">
-    <span class="card-tagline"><span>🚐</span> Alojamiento Estrella</span>
-    <h2 class="card-title">Olive GlampVan (Ma'ale Gamla)</h2>
-    <div class="price-pill"><span class="currency">₪1.434</span> <span class="note">total 2 noches</span></div>
-    <p class="card-subtitle">
-      Caravana moderna de alta gama inmersa en un huerto privado de olivos. Calificada con <strong>★4.96</strong> (Superhosts Ori y Revital).
-    </p>
+    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
+      <span class="card-tagline"><span>⛺</span> Alojamiento Principal</span>
+      <div class="price-pill"><span class="currency">₪880</span> <span class="note">1 noche total</span></div>
+    </div>
+    <h2 class="card-title">Yurt on the farm / יורט בחווה (Natur)</h2>
+    <p class="card-subtitle">Anfitriona Orly (8 años hospedando, ★4.84 en 163 reseñas). Yurta mongola circular en la finca ecológica Netora con vista al Kinneret.</p>
 
-    <!-- Galería Vertical de Fotos GlampVan -->
-    <div class="photo-container">
-      <img src="img/olive_glampvan_ext.jpg" alt="Olive GlampVan en el huerto de olivos" loading="lazy">
-      <span class="photo-badge">Exterior</span>
-      <div class="photo-caption">Finca privada de olivos en Ma'ale Gamla con vista al atardecer.</div>
+    <div class="photo-container" style="height: 240px;">
+      <img src="img/yurta/yurta_01.jpg" alt="Interior Yurta en Moshav Natur" loading="lazy" id="mobYurtImg">
+      <span class="photo-badge">★ 4.78 en Airbnb (18 reseñas) • ₪880 verificado</span>
+      <div class="photo-caption" id="mobYurtCaption">Interior: 10 camas individuales sobre madera, estufa a leña y AC frío/calor.</div>
     </div>
 
-    <div class="photo-container">
-      <img src="img/olive_glampvan_bed.jpg" alt="Dormitorio con cama doble matrimonial y camarote" loading="lazy">
-      <span class="photo-badge">Dormitorio</span>
-      <div class="photo-caption">Cama matrimonial acogedora y camarote litera para niños.</div>
-    </div>
-
-    <div class="photo-container">
-      <img src="img/olive_glampvan_dining.jpg" alt="Comedor que se abate como 5ª cama" loading="lazy">
-      <span class="photo-badge">5ª Cama Comedor</span>
-      <div class="photo-caption">Mesa de comedor que se convierte fácilmente en cama para niño.</div>
+    <!-- Switcher de fotos móvil -->
+    <div style="display: flex; gap: 6px; overflow-x: auto; padding-bottom: 8px; margin-bottom: 12px;">
+      <button class="btn-nav" style="padding: 4px 8px; font-size: 11px; white-space: nowrap;" onclick="document.getElementById('mobYurtImg').src='img/yurta/yurta_01.jpg'; document.getElementById('mobYurtCaption').textContent='Interior: 10 camas sobre piso de madera lustrada y estufa a leña.';">Interior</button>
+      <button class="btn-nav" style="padding: 4px 8px; font-size: 11px; white-space: nowrap;" onclick="document.getElementById('mobYurtImg').src='img/yurta/yurta_02.jpg'; document.getElementById('mobYurtCaption').textContent='Exterior y huerto con vista panorámica al Mar de Galilea.';">Vista Kinneret</button>
+      <button class="btn-nav" style="padding: 4px 8px; font-size: 11px; white-space: nowrap;" onclick="document.getElementById('mobYurtImg').src='img/yurta/yurta_03.jpg'; document.getElementById('mobYurtCaption').textContent='Vista nocturna con las luces de Tiberias sobre el lago.';">Noche Tiberias</button>
+      <button class="btn-nav" style="padding: 4px 8px; font-size: 11px; white-space: nowrap;" onclick="document.getElementById('mobYurtImg').src='img/yurta/yurta_04.jpg'; document.getElementById('mobYurtCaption').textContent='Patio privado con sillas, fogón rústico con leña y hamaca.';">Patio & Fogón</button>
+      <button class="btn-nav" style="padding: 4px 8px; font-size: 11px; white-space: nowrap;" onclick="document.getElementById('mobYurtImg').src='img/yurta/yurta_05.jpg'; document.getElementById('mobYurtCaption').textContent='Baño completo privado adyacente con inodoro y vanitorio.';">Baño</button>
+      <button class="btn-nav" style="padding: 4px 8px; font-size: 11px; white-space: nowrap;" onclick="document.getElementById('mobYurtImg').src='img/yurta/yurta_06.jpg'; document.getElementById('mobYurtCaption').textContent='Ducha privada independiente con agua caliente.';">Ducha</button>
+      <button class="btn-nav" style="padding: 4px 8px; font-size: 11px; white-space: nowrap;" onclick="document.getElementById('mobYurtImg').src='img/yurta/yurta_07.jpg'; document.getElementById('mobYurtCaption').textContent='Cocina interior con encimera a gas, refrigerador y kettle.';">Cocina</button>
     </div>
 
     <div class="stacked-group">
       <div class="feature-card">
-        <div class="feature-header"><span>🛏️</span> Camas (hasta 5 pers.)</div>
-        <div class="feature-value">1 matrimonial + litera + comedor</div>
-        <div class="feature-desc">Cama doble, camarote de 2 plazas, sofá cama y mesa comedor abatible especial para niño de 3 años.</div>
+        <div class="feature-header"><span>🛏️</span> Camas & Distribución</div>
+        <div class="feature-value">Hasta 10 huéspedes • 10 camas individuales</div>
+        <div class="feature-desc">Colchones/futones distribuidos en círculo sobre piso de madera. <em>Ropa de cama:</em> No incluida por defecto en Airbnb; llevar sábanas/sacos propios y toallas familiares (<strong>por confirmar con el anfitrión si suministran bajo pedido</strong>).</div>
       </div>
       <div class="feature-card">
-        <div class="feature-header"><span>🔥</span> Clima & Agua Caliente</div>
-        <div class="feature-value">AC potente + Gas continuo</div>
-        <div class="feature-desc">Aire acondicionado frío/calor inverter y calentador a gas que nunca se queda sin agua caliente en la ducha.</div>
+        <div class="feature-header"><span>🔥</span> Calefacción Dual (Clave Golán ~5 °C)</div>
+        <div class="feature-value">AC Frío/Calor + Estufa a Leña</div>
+        <div class="feature-desc">Aire acondicionado split de gran potencia térmica + estufa/chimenea rústica de hierro fundido con tiraje exterior. Confort asegurado toda la noche. (Leña: <strong>por confirmar con el anfitrión</strong> o llevar leña propia).</div>
       </div>
       <div class="feature-card">
-        <div class="feature-header"><span>🍳</span> Cocina & Patio</div>
-        <div class="feature-value">Kitchenette + Fogón exterior</div>
-        <div class="feature-desc">Encimera a gas, microondas, refrigerador/congelador, cafetera, fogata (fire pit) y parrilla al aire libre.</div>
+        <div class="feature-header"><span>🚿</span> Baño y Ducha Privada</div>
+        <div class="feature-value">Módulo privado completo adyacente</div>
+        <div class="feature-desc">Inodoro estándar con descarga, vanitorio con espejo y ducha privada independiente con receptáculo y agua caliente.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-header"><span>⏰</span> Check-in / Out & Cancelación</div>
-        <div class="feature-value">In: 15:00 / Out: 11:00</div>
-        <div class="feature-desc">Cancelación gratuita hasta el 1 de dic 2026. <em>No se cobra tasa de limpieza ni comisión Airbnb adicional.</em></div>
+        <div class="feature-header"><span>🍳</span> Cocinas & Fogón Exterior</div>
+        <div class="feature-value">Cocina a gas + BBQ + Fire Pit</div>
+        <div class="feature-desc">Interior con lavaplatos, cocina a gas (2 hornallas), mini-frigo y kettle. Exterior con mesas bajo los árboles, parrilla BBQ a carbón, fogón metálico con leña y hamaca colgante.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-header"><span>⏰</span> Horarios, Acceso y Reglas</div>
+        <div class="feature-value">Check-in: 15:00 a 21:00 • Check-out: Por confirmar</div>
+        <div class="feature-desc">Check-out habitual 10:00 u 11:00 AM (<strong>por confirmar con el anfitrión</strong>). Portón de acceso de Moshav Natur (se llama a la anfitriona para ingresar). Estacionamiento gratuito en el predio. No mascotas; no fumar; no fiestas.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-header"><span>⭐</span> Resumen de Reseñas Reales (18)</div>
+        <div class="feature-value">★4.78 • Hospitalidad y naturaleza</div>
+        <div class="feature-desc">Destacan la vista al Kinneret, atardeceres y la fogata nocturna. Reseñas advierten desconexión total (sin Wifi ni TV) y actividad escolar cercana por la mañana en días hábiles.</div>
       </div>
     </div>
 
-    <div class="inline-alert">
-      <strong>Detalle de reserva:</strong> En Airbnb se cotiza para 4 huéspedes (₪717/noche = ₪1.434 total) y se le envía mensaje a Ori avisándole del 5º huésped (el niño de 3 años en el comedor abatible, tal como autoriza su ficha).
-    </div>
-
-    <a href="https://www.airbnb.com/rooms/1365122226829793190" target="_blank" class="btn-action btn-primary" style="margin-top: 14px;">
-      Abrir Olive GlampVan en Airbnb ↗
+    <a href="https://www.airbnb.com/rooms/49536207?check_in=2026-12-09&check_out=2026-12-10&adults=2&children=4" target="_blank" class="btn-action btn-primary">
+      Ver y Reservar Yurta en Airbnb (₪880) ↗
     </a>
   </section>
-
-  <!-- ==================== SLIDE 6: 2 ALTERNATIVAS GLAMPING ==================== -->
+  
+<!-- ==================== ALTERNATIVAS DE RESPALDO ==================== -->
   <section class="card" id="alternativas">
-    <span class="card-tagline"><span>🏕️</span> Opciones Comparativas</span>
-    <h2 class="card-title">2 Alternativas de Glamping en el Norte</h2>
-    <p class="card-subtitle">Cotizadas para 5 huéspedes para las mismas fechas (9 al 11 dic 2026), ambas con excelentes reseñas y entorno natural.</p>
+    <span class="card-tagline"><span>🏕️</span> Opciones de Respaldo</span>
+    <h2 class="card-title">Alternativas de Respaldo en el Golán</h2>
+    <p class="card-subtitle">Opciones de reserva en caso de que surgiera cualquier eventualidad con la yurta de Natur.</p>
 
-    <!-- Alt 1: Peace in the Nest Eliad -->
-    <div class="feature-card" style="margin-bottom: 16px;">
-      <div class="photo-container" style="margin-top: 0;">
-        <img src="img/yurt_eliad.jpg" alt="Yurta en Eliad" loading="lazy">
-        <span class="photo-badge">Alternativa 1</span>
+    <div class="stacked-group">
+      <div class="feature-card">
+        <div class="photo-container" style="height: 160px; margin-bottom: 10px;">
+          <img src="img/olive_glampvan_ext.jpg" alt="Olive GlampVan en Maale Gamla" loading="lazy">
+          <span class="photo-badge">Respaldo 1 • Ma'ale Gamla</span>
+        </div>
+        <div class="feature-header"><span>🚐</span> Respaldo 1</div>
+        <div class="feature-value">Olive GlampVan (Ma'ale Gamla) • ~₪764 ref.</div>
+        <div class="feature-desc">Camper de lujo en huerto privado de olivos (★4.96 en 49 reseñas). 4 camas + comedor abatible para el niño de 3 años. Requiere desbloqueo de fechas con Ori.</div>
+        <a href="https://www.airbnb.com/rooms/1365122226829793190" target="_blank" class="btn-action btn-secondary" style="margin-top: 8px;">Ver en Airbnb ↗</a>
       </div>
-      <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
-        <h3 style="font-size: 19px; font-weight: 700; color: #ffffff;">Peace in the Nest (Eliad)</h3>
-        <div class="price-pill" style="margin-bottom: 0;"><span class="currency">₪1.400</span> <span class="note">2 noches</span></div>
-      </div>
-      <p style="font-size: 16px; color: #cbd5e1; margin-bottom: 12px; line-height: 1.55;">Yurta mongola circular artesanal sobre el acantilado en Moshav Eliad (Golán Sur). Vista al atardecer sobre el Kinneret.</p>
-      <ul class="check-list" style="margin: 0 0 14px 0;">
-        <li class="check-item"><span class="check-box">✓</span> <div><strong>Capacidad:</strong> Hasta 7 huéspedes (5 camas + colchonetas).</div></li>
-        <li class="check-item"><span class="check-box">✓</span> <div><strong>Comodidades:</strong> Cúpula tragaluz, estufa/AC, deck de madera y fogata.</div></li>
-        <li class="check-item"><span class="check-box">✓</span> <div><strong>Tarifa:</strong> ₪700/noche base (tarifa para 2 noches).</div></li>
-      </ul>
-      <a href="https://www.airbnb.com/rooms/1131205055156953976" target="_blank" class="btn-action btn-secondary">
-        Ver Peace in the Nest en Airbnb ↗
-      </a>
-    </div>
 
-    <!-- Alt 2: Luxury Yurt Had Nes -->
-    <div class="feature-card">
-      <div class="photo-container" style="margin-top: 0;">
-        <img src="img/yurt_hadnes.jpg" alt="Luxury Yurt Had Nes" loading="lazy">
-        <span class="photo-badge">Alternativa 2</span>
+      <div class="feature-card">
+        <div class="photo-container" style="height: 160px; margin-bottom: 10px;">
+          <img src="img/katzrin_village.jpg" alt="Townhouse en Katzrin" loading="lazy">
+          <span class="photo-badge">Respaldo 2 • Katzrin</span>
+        </div>
+        <div class="feature-header"><span>🏡</span> Respaldo 2</div>
+        <div class="feature-value">Townhouse en Katzrin • ₪890 total</div>
+        <div class="feature-desc">Casa completa para 6 huéspedes: 3 dormitorios, 4 camas, 3 baños, patio con parrilla BBQ. Verificada disponible al 9-nov en Airbnb (53888369).</div>
+        <a href="https://www.airbnb.com/rooms/53888369?check_in=2026-12-09&check_out=2026-12-10&adults=2&children=4" target="_blank" class="btn-action btn-secondary" style="margin-top: 8px;">Ver en Airbnb ↗</a>
       </div>
-      <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
-        <h3 style="font-size: 19px; font-weight: 700; color: #ffffff;">Luxury Yurt (Had Nes)</h3>
-        <div class="price-pill" style="margin-bottom: 0;"><span class="currency">₪1.450</span> <span class="note">2 noches aprox.</span></div>
+
+      <div class="feature-card">
+        <div class="photo-container" style="height: 160px; margin-bottom: 10px;">
+          <img src="img/yurt_eliad.jpg" alt="Yurta Peace in the Nest en Eliad" loading="lazy">
+          <span class="photo-badge">Respaldo 3 • Eliad</span>
+        </div>
+        <div class="feature-header"><span>⛺</span> Respaldo 3</div>
+        <div class="feature-value">Peace in the Nest (Eliad) • ~₪700 ref.</div>
+        <div class="feature-desc">Yurta mongola circular sobre acantilado con vista a Nahal El Al (Golán Sur). Capacidad 7 personas.</div>
+        <a href="https://www.airbnb.com/rooms/1131205055156953976" target="_blank" class="btn-action btn-secondary" style="margin-top: 8px;">Ver en Airbnb ↗</a>
       </div>
-      <p style="font-size: 16px; color: #cbd5e1; margin-bottom: 12px; line-height: 1.55;">Complejo boutique de yurtas de lujo rodeadas de jardines tropicales en Had Nes, al norte del Kinneret.</p>
-      <ul class="check-list" style="margin: 0 0 14px 0;">
-        <li class="check-item"><span class="check-box">✓</span> <div><strong>Capacidad:</strong> Hasta 6 huéspedes (cama King + sofás cama).</div></li>
-        <li class="check-item"><span class="check-box">✓</span> <div><strong>Comodidades:</strong> Jacuzzi exterior privado, baño de piedra, cocina compartida.</div></li>
-        <li class="check-item"><span class="check-box">✓</span> <div><strong>Tarifa:</strong> ~₪725/noche (rango ₪1.350 a ₪1.500 para 2 noches).</div></li>
-      </ul>
-      <a href="https://www.airbnb.com/rooms/8594029" target="_blank" class="btn-action btn-secondary">
-        Ver Luxury Yurt en Airbnb ↗
-      </a>
     </div>
   </section>
-
-  <!-- ==================== SLIDE 7: DÍA 1 ==================== -->
+  
+<!-- ==================== DÍA 1: LLEGADA, ASADO Y VELAS ==================== -->
   <section class="card" id="itinerario">
-    <span class="card-tagline"><span>✨</span> Itinerario Paso a Paso</span>
-    <h2 class="card-title">Día 1: Llegada, Velas y Fogata</h2>
-    <p class="card-subtitle">Viaje directo, instalación relajada y la magia de encender la 6ª vela bajo el cielo estrellado del Golán.</p>
+    <span class="card-tagline"><span>✨</span> Miércoles 9 Diciembre</span>
+    <h2 class="card-title">Día 1: Llegada con Luz, Hot Dogs y 6ª Vela</h2>
+    <p class="card-subtitle">Una tarde diseñada para disfrutar con luz de día plena, encender Janucá y gozar la fogata.</p>
 
     <div class="photo-container">
-      <img src="img/olive_glampvan_patio.jpg" alt="Fogata de noche en el patio de olivos" loading="lazy">
-      <span class="photo-badge">Día 1 • Mié 9 Dic</span>
-      <div class="photo-caption">Fogón y patio iluminado entre los olivos de Ma'ale Gamla.</div>
+      <img src="img/yurta/yurta_04.jpg" alt="Patio de la yurta en Natur" loading="lazy">
+      <span class="photo-badge">Tarde y Noche en Natur</span>
+      <div class="photo-caption">Patio privado con sillas, fogón metálico con leña y hamaca bajo los árboles.</div>
     </div>
 
     <div class="timeline">
       <div class="timeline-item">
-        <div class="timeline-time">14:15</div>
+        <div class="timeline-time">14:00</div>
         <div class="timeline-body">
-          <div class="timeline-title">Partida desde Harish / Mitzpe Ilan</div>
-          <div class="timeline-sub">Salida en auto con bolsos, comida lista y cajas de Janucá. Manejo tranquilo de 112 km por la Ruta 65/77.</div>
+          <div class="timeline-title">Salida desde Harish / Mitzpe Ilan</div>
+          <div class="timeline-sub">Cargar auto con bolsos y ropa de fiesta en perchas. Viaje de 115 km (~1h 45m).</div>
         </div>
       </div>
       <div class="timeline-item">
-        <div class="timeline-time">16:00</div>
+        <div class="timeline-time">15:45</div>
         <div class="timeline-body">
-          <div class="timeline-title">Llegada a Ma'ale Gamla & Check-in</div>
-          <div class="timeline-sub">Recepción personal por los anfitriones (Ori/Revital). Acomodo de camas y encendido de la calefacción.</div>
+          <div class="timeline-title">Llegada a Moshav Natur CON LUZ DE DÍA PLENA</div>
+          <div class="timeline-sub">50 min antes del atardecer. Descarga de bolsos, acomodarse en la yurta y paseo por la finca ecológica.</div>
         </div>
       </div>
       <div class="timeline-item">
         <div class="timeline-time">16:35</div>
         <div class="timeline-body">
-          <div class="timeline-title">Puesta de Sol: 6ª Vela de Janucá</div>
-          <div class="timeline-sub">Encendido familiar <strong>AFUERA</strong> en el huerto con januquiá protegida en caja de vidrio. Bendiciones, cantos y emoción.</div>
+          <div class="timeline-title">Puesta de sol & 6ª Vela de Janucá</div>
+          <div class="timeline-sub">Encendido solemne afuera en el patio con vista panorámica al Mar de Galilea (con farol de vidrio antiviento).</div>
         </div>
       </div>
       <div class="timeline-item">
-        <div class="timeline-time">17:15+</div>
+        <div class="timeline-time">17:15</div>
         <div class="timeline-body">
-          <div class="timeline-title">Fogata, Sufganiot y Cena Caliente</div>
-          <div class="timeline-sub">Prender el fogón (fire pit), asar malvaviscos kosher, comer sufganiot con chocolate caliente y cena casera reconfortante.</div>
+          <div class="timeline-title">Hot dogs a la parrilla</div>
+          <div class="timeline-sub">Salchichas kosher con pan. La parrilla de la yurta no es kasher: doble aluminio o mangal desechable (por confirmar con la anfitriona).</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">18:30</div>
+        <div class="timeline-body">
+          <div class="timeline-title">Fogata Rústica (Fire Pit) bajo las Estrellas</div>
+          <div class="timeline-sub">Fuego con leña crepitando, malvaviscos asados, juegos de sevivon y canciones de Janucá.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">21:00</div>
+        <div class="timeline-body">
+          <div class="timeline-title">Noche Acogedora en la Yurta</div>
+          <div class="timeline-sub">Dormir calientitos con el aire acondicionado en modo calor y/o estufa a leña encendida.</div>
         </div>
       </div>
     </div>
-
-    <div class="inline-alert">
-      <strong>Para los niños de 3 a 10 años:</strong> Sentirse exploradores en su propia caravana y ver saltar las chispas del fuego bajo los olivos es pura emoción.
-    </div>
   </section>
-
-  <!-- ==================== SLIDE 8: DÍA 2 MAÑANA (GAMLA) ==================== -->
+  
+<!-- ==================== DÍA 2: PASEOS (GAMLA) ==================== -->
   <section class="card" id="paseos">
-    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
-      <span class="card-tagline"><span>🦅</span> Naturaleza Salvaje</span>
-      <div class="price-pill"><span class="currency">₪98</span> <span class="note">total familia</span></div>
-    </div>
-    <h2 class="card-title">Reserva Natural Gamla</h2>
-    <p class="card-subtitle">La mayor colonia de buitres de Israel y la cascada perenne más alta del país (51 metros de caída).</p>
+    <span class="card-tagline"><span>🦅</span> Jueves 10 Dic • 09:15 a 10:45</span>
+    <h2 class="card-title">Reserva Gamla & Cascada de 51m</h2>
+    <p class="card-subtitle">A solo <strong>6.1 km (8 minutos) de Moshav Natur</strong>. La reserva abre en invierno a las 08:00 hrs.</p>
 
     <div class="photo-container">
-      <img src="img/gamla_vulture.jpg" alt="Buitre leonado en Gamla" loading="lazy">
-      <span class="photo-badge">Día 2 • Jueves Mañana</span>
-      <div class="photo-caption">Buitre leonado planeando sobre los acantilados de Gamla.</div>
+      <img src="img/gamla_waterfall.jpg" alt="Cascada de Gamla de 51 metros en invierno" loading="lazy">
+      <span class="photo-badge">Hito Natural Estelar</span>
+      <div class="photo-caption">La caída de agua perenne más alta de Israel con caudal pleno de invierno.</div>
     </div>
 
     <div class="stacked-group">
       <div class="feature-card">
-        <div class="feature-header"><span>🔭</span> Qué verán</div>
-        <div class="feature-value">Buitres gigantes & Cascada</div>
-        <div class="feature-desc">Mirador con telescopios fijos para observar buitres leonados planeando a metros de distancia sobre el abismo.</div>
+        <div class="feature-header"><span>🌊</span> Cascada de 51m & Buitres</div>
+        <div class="feature-value">Sendero plano y accesible</div>
+        <div class="feature-desc">Caminata apta para cochecito hasta el mirador de la cascada. Telescopios para avistar buitres leonados planeando sobre el cañón.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-header"><span>👶</span> Ideal niños 3 a 10 años</div>
-        <div class="feature-value">Sendero plano y seguro</div>
-        <div class="feature-desc">El sendero al observatorio es ancho, plano y apto para cochecitos. Los niños quedan boquiabiertos con la envergadura de las aves.</div>
+        <div class="feature-header"><span>🚗</span> Distancia desde Natur</div>
+        <div class="feature-value">Solo 6.1 km • 8 min de viaje</div>
+        <div class="feature-desc">Salida de la yurta a las 09:00, llegada 09:10. Tiempo de visita: 1 hora y 30 min antes de seguir a Katzrin.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-header"><span>📍</span> Distancia y Tiempo</div>
-        <div class="feature-value">12 km (15 min en auto)</div>
-        <div class="feature-desc">Duración estimada: 2 horas (09:30 a 11:30 hrs). Prácticamente al lado del van.</div>
+        <div class="feature-header"><span>🎟️</span> Tarifas INPA Oficiales</div>
+        <div class="feature-value">₪98 ILS total familia</div>
+        <div class="feature-desc">Adultos: ₪28 c/u. Niños (5-17): ₪14 c/u. Niño de 3 años: <strong>GRATIS</strong> (o $0 con Matmón).</div>
       </div>
-      <div class="feature-card">
-        <div class="feature-header"><span>🎟️</span> Tarifas INPA 2026</div>
-        <div class="feature-value">Adulto ₪28 | Niño ₪14</div>
-        <div class="feature-desc">Niño de 3 años entra gratis. Total familia: 2x₪28 + 3x₪14 = ₪98 (¡o $0 si tienen tarjeta Matmón!).</div>
-      </div>
-    </div>
-
-    <div class="inline-alert">
-      <strong>En diciembre:</strong> Tras las primeras lluvias de invierno, la cascada Gamla cae con fuerza impresionante y los valles lucen verdes y llenos de vida.
     </div>
   </section>
-
-  <!-- ==================== SLIDE 9: DÍA 2 MEDIODÍA (KATZRIN) ==================== -->
+  
+<!-- ==================== DÍA 2: PASEOS (KATZRIN) ==================== -->
   <section class="card">
     <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
-      <span class="card-tagline"><span>🏛️</span> Historia Viva de Janucá</span>
-      <div class="price-pill"><span class="currency">₪110</span> <span class="note">total familia aprox.</span></div>
+      <span class="card-tagline"><span>🏛️</span> Jueves Mediodía • Paseo 2</span>
+      <div class="price-pill"><span class="currency">₪110</span> <span class="note">total familia</span></div>
     </div>
     <h2 class="card-title">Pueblo Talmúdico de Katzrin</h2>
-    <p class="card-subtitle">Aldea judía reconstruida de los tiempos de la Mishná con prensa de aceite de oliva auténtica.</p>
+    <p class="card-subtitle">Prensa de aceite de oliva auténtica de basalto para vivir la historia real de Janucá.</p>
 
     <div class="photo-container">
       <img src="img/katzrin_olive_press.jpg" alt="Prensa antigua de aceite de oliva en Katzrin" loading="lazy">
-      <span class="photo-badge">Día 2 • Jueves Mediodía</span>
-      <div class="photo-caption">Molino y prensa milenaria de aceite de oliva en el Parque Katzrin.</div>
+      <span class="photo-badge">Janucá en Vivo</span>
+      <div class="photo-caption">Prensa milenaria de basalto para extraer aceite puro de oliva.</div>
     </div>
 
     <div class="stacked-group">
       <div class="feature-card">
-        <div class="feature-header"><span>🫒</span> Conexión con Janucá</div>
-        <div class="feature-value">Prensado tradicional de aceite</div>
-        <div class="feature-desc">Moler aceitunas y accionar la prensa de viga de basalto para entender cómo se producía el aceite puro de la Menorá.</div>
+        <div class="feature-header"><span>🫒</span> Actividad Janucá</div>
+        <div class="feature-value">Prensar aceitunas con viga de piedra</div>
+        <div class="feature-desc">Los niños muelen aceitunas y ven cómo salía el aceite para encender la Menorá en el Beit HaMikdash.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-header"><span>🏠</span> Aventura para niños</div>
-        <div class="feature-value">Túnicas bíblicas & Hornos</div>
-        <div class="feature-desc">Recorrer la Casa de Abun, disfrazarse de sabios talmúdicos, tocar basalto milenario y hornear pan en hornos de barro.</div>
+        <div class="feature-header"><span>🥖</span> Hornear pan pita & Túnicas</div>
+        <div class="feature-value">Disfrazarse de la época talmúdica</div>
+        <div class="feature-desc">Hornean pan pita con za'atar en hornos de barro y recorren las casas de piedra de la Mishná.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-header"><span>📍</span> Distancia y Duración</div>
-        <div class="feature-value">18 km (20 min)</div>
-        <div class="feature-desc">A 15 min de Gamla hacia el norte. Duración: 1h 45m (12:15 a 14:00 hrs). Almuerzo picnic en sus bancos sombreados.</div>
+        <div class="feature-header"><span>📍</span> Distancia y Tarifa</div>
+        <div class="feature-value">18 km al norte (20 min)</div>
+        <div class="feature-desc">Adulto ₪25, Niño ₪20, menor de 3 años gratis. Total: ~₪110 ILS. Horario: 11:00–12:30 hrs.</div>
       </div>
-      <div class="feature-card">
-        <div class="feature-header"><span>🎟️</span> Tarifas 2026</div>
-        <div class="feature-value">Adulto ₪25 | Niño ₪20</div>
-        <div class="feature-desc">Niño de 3 años gratis. Total familia: 2x₪25 + 3x₪20 = ₪110. Incluye entrada a la sinagoga antigua de basalto.</div>
-      </div>
-    </div>
-
-    <div class="inline-alert">
-      <strong>Ambiente techado:</strong> Gran parte de la aldea tiene salas de piedra techadas donde refugiarse cálidamente si cae alguna llovizna pasajera.
     </div>
   </section>
 
-  <!-- ==================== SLIDE 10: DÍA 2 TARDE (DE KARINA) ==================== -->
+  
+<!-- ==================== DÍA 2: PASEOS (DE KARINA) ==================== -->
   <section class="card">
     <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
-      <span class="card-tagline"><span>🍫</span> Dulce Calidez de Invierno</span>
-      <div class="price-pill"><span class="currency">₪320</span> <span class="note">total taller familia aprox.</span></div>
+      <span class="card-tagline"><span>🍫</span> Jueves Tarde • Paseo 3</span>
+      <div class="price-pill"><span class="currency">~₪225</span> <span class="note">taller familia</span></div>
     </div>
     <h2 class="card-title">Chocolatería De Karina (Ein Zivan)</h2>
-    <p class="card-subtitle">Fábrica boutique artesanal con certificación Kosher Mehadrin (Badatz Manchester / Jalav Yisrael & Pareve).</p>
+    <p class="card-subtitle">Taller artesanal de chocolate para los niños con certificación Badatz Manchester Mehadrin.</p>
 
     <div class="photo-container">
-      <img src="img/chocolate_workshop.jpg" alt="Taller de chocolates artesanales De Karina" loading="lazy">
-      <span class="photo-badge">Día 2 • Jueves Tarde</span>
-      <div class="photo-caption">Chocolatería Boutique De Karina en Kibutz Ein Zivan.</div>
+      <img src="img/chocolate_workshop.jpg" alt="Taller de chocolates en De Karina" loading="lazy">
+      <span class="photo-badge">Kosher Mehadrin</span>
+      <div class="photo-caption">Taller de figuras y bombones de chocolate para llevarse de recuerdo.</div>
     </div>
 
     <div class="stacked-group">
       <div class="feature-card">
-        <div class="feature-header"><span>👩‍🍳</span> Taller Creativo Infantil</div>
-        <div class="feature-value">Armar sus propios chocolates</div>
-        <div class="feature-desc">Cada niño recibe moldes, mangas de chocolate fundido y decoraciones para crear figuras que se llevan en caja de regalo.</div>
+        <div class="feature-header"><span>👩‍🍳</span> Taller Infantil Creativo</div>
+        <div class="feature-value">Crear figuras de chocolate</div>
+        <div class="feature-desc">Cada niño recibe mangas de chocolate fundido y moldes para armar sus propias creaciones y llevárselas en caja.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-header"><span>☕</span> Experiencia familiar</div>
+        <div class="feature-header"><span>☕</span> Cafetería & Calidez</div>
         <div class="feature-value">Chocolate caliente espeso</div>
-        <div class="feature-desc">Recorrido vidriado por la fábrica, película breve y cafetería con chocolate caliente gourmet, perfecto para la tarde fría.</div>
+        <div class="feature-desc">Recorrido por la fábrica vidriada y cafetería boutique para una pausa dulce y reconfortante.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-header"><span>📍</span> Distancia y Horario</div>
-        <div class="feature-value">24 km desde Katzrin (25 min)</div>
-        <div class="feature-desc">Duración: 1h 15 min (14:45 a 16:00 hrs). Llegada perfecta para regresar al van antes de la puesta de sol.</div>
+        <div class="feature-header"><span>📍</span> Horario & Ropa de Fiesta</div>
+        <div class="feature-value">13:45–15:00 • Parada Fija</div>
+        <div class="feature-desc">Almuerzo previo 12:30–13:15. Taller de chocolate y visita. <strong>Cambiarse a ropa de fiesta</strong> en De Karina antes de salir a las 15:15 directo a Or Akiva.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-header"><span>🎟️</span> Tarifas Taller 2026</div>
-        <div class="feature-value">Niño ~₪75 | Adulto ~₪25-35</div>
-        <div class="feature-desc">3 niños en taller (~₪225) + adultos/guagua en visita (~₪95) = ~₪320 ILS. <em>Requiere reserva previa online.</em></div>
+        <div class="feature-header"><span>🎟️</span> Tarifas y Horario Verificado</div>
+        <div class="feature-value">~₪225 ILS Total Familia</div>
+        <div class="feature-desc">Abierto jueves en dic 10:00–17:00 (talleres hasta 15:00). 3 niños en taller (~₪75 c/u) = ~₪225 (sin cafetería). Kosher Mehadrin. Requiere reserva previa.</div>
       </div>
-    </div>
-
-    <div class="inline-alert">
-      <strong>El hit del viaje:</strong> A los niños de 3 a 10 años les fascina ensuciarse los dedos con chocolate y salir con su propio "gelt" de Janucá hecho por ellos mismos.
     </div>
   </section>
 
-  <!-- ==================== SLIDE 11: DÍA 2 NOCHE ==================== -->
-  <section class="card">
-    <span class="card-tagline"><span>🔥</span> Magia Nocturna</span>
-    <h2 class="card-title">7ª Vela, Torneo de Dreidel y Banquete</h2>
-    <p class="card-subtitle">Una velada íntima de celebración familiar para culminar el día más activo del viaje.</p>
-
-    <div class="photo-container">
-      <img src="img/kinneret_view.jpg" alt="Atardecer sobre el Kinneret desde el Golán" loading="lazy">
-      <span class="photo-badge">Día 2 • Jueves Noche</span>
-      <div class="photo-caption">Atardecer dorado sobre el Mar de Galilea visto desde Ma'ale Gamla.</div>
-    </div>
-
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-time">16:30</div>
-        <div class="timeline-body">
-          <div class="timeline-title">Regreso al van & Puesta de Sol</div>
-          <div class="timeline-sub">Llegada a Ma'ale Gamla justo a tiempo mientras el sol tiñe de púrpura las aguas del Kinneret.</div>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-time">16:35</div>
-        <div class="timeline-body">
-          <div class="timeline-title">Encendido solemne de la 7ª Vela</div>
-          <div class="timeline-sub">Siete llamitas bailando en la caja de vidrio en medio del huerto. Canciones de Janucá entonadas por toda la familia.</div>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-time">17:30</div>
-        <div class="timeline-body">
-          <div class="timeline-title">Gran Torneo Familiar de Sevivón (Dreidel)</div>
-          <div class="timeline-sub">Jugando por el chocolate recién fabricado en De Karina. Risas garantizadas para los niños de 3 a 10 años.</div>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-time">18:30+</div>
-        <div class="timeline-body">
-          <div class="timeline-title">Cena especial & Parrilla en el GlampVan</div>
-          <div class="timeline-sub">Usar la cocinilla y la parrilla exterior. Noche tibia y abrigada dentro de la caravana con calefacción inverter.</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="inline-alert">
-      <strong>Descanso pleno:</strong> Los niños caen rendidos y felices tras un día lleno de aventuras, aire puro y emociones.
-    </div>
-  </section>
-
-  <!-- ==================== SLIDE 12: DÍA 3 VIERNES ==================== -->
+  
+<!-- ==================== DÍA 2: PASEOS (KINNERET / RUTA DIRECTA) ==================== -->
   <section class="card">
     <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
-      <span class="card-tagline"><span>🐊</span> Aventura Final & Regreso Seguro</span>
-      <div class="price-pill"><span class="currency">13:10</span> <span class="note">en Harish garantizado</span></div>
+      <span class="card-tagline"><span>🌊</span> Jueves Tarde • Ruta Directa</span>
+      <div class="price-pill"><span class="currency">15:15</span> <span class="note">salida directa</span></div>
     </div>
-    <h2 class="card-title">Día 3: Hamat Gader y Vuelta a Tiempo</h2>
-    <p class="card-subtitle">Check-out matutino, visita entretenida en el Valle de Yarmuk y llegada con holgura para preparar Shabat Janucá.</p>
+    <h2 class="card-title">Descenso del Golán & Ruta a Or Akiva</h2>
+    <p class="card-subtitle">Descenso panorámico desde Ein Zivan con vistas al valle y al Kinneret, viajando directo a Salón LUNA.</p>
 
     <div class="photo-container">
-      <img src="img/hamat_gader.jpg" alt="Cocodrilos en Hamat Gader" loading="lazy">
-      <span class="photo-badge">Día 3 • Viernes Mañana</span>
-      <div class="photo-caption">Granja de cocodrilos y aguas termales en Hamat Gader.</div>
+      <img src="img/kinneret_view.jpg" alt="Orilla este del Kinneret" loading="lazy">
+      <span class="photo-badge">Descenso Panorámico</span>
+      <div class="photo-caption">Vistas doradas en la ruta directa hacia la costa.</div>
     </div>
 
     <div class="stacked-group">
       <div class="feature-card">
-        <div class="feature-header"><span>⏰</span> 09:30 Check-out</div>
-        <div class="feature-value">Despedida de Ma'ale Gamla</div>
-        <div class="feature-desc">Dejar la caravana impecable, cargar maletas y bajar hacia el sur bordeando el lago (30 min de viaje).</div>
+        <div class="feature-header"><span>🪨</span> Niños Cómodos</div>
+        <div class="feature-value">Listos para la fiesta</div>
+        <div class="feature-desc">Ya vestidos con ropa de fiesta desde De Karina, los niños viajan cómodos y relajados tras el taller de chocolate.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-header"><span>🐊</span> 10:00 a 11:30 Hamat Gader</div>
-        <div class="feature-value">Cocodrilos gigantes & Termas</div>
-        <div class="feature-desc">Caminar por las pasarelas sobre cientos de cocodrilos y caimanes. <em>Alternativa gratis: Paseo y muelle de Ein Gev.</em></div>
+        <div class="feature-header"><span>⏱️</span> Ruta Directa</div>
+        <div class="feature-value">~2 h hacia Or Akiva</div>
+        <div class="feature-desc">Salida 15:15 directo a LUNA (Or Akiva), llegando 17:30 (buffer de 30 min) antes del montaje de las 18:00.</div>
       </div>
-      <div class="feature-card">
-        <div class="feature-header"><span>🚗</span> 11:45 Salida hacia Harish</div>
-        <div class="feature-value">95 km expeditos (~1h 20m)</div>
-        <div class="feature-desc">Por Ruta 90/65 en sentido contrario al tráfico pesado. Ruta completamente llana y segura.</div>
-      </div>
-      <div class="feature-card">
-        <div class="feature-header"><span>🕯️</span> 13:10 Llegada a Harish</div>
-        <div class="feature-value">2h 50m antes de Shabat</div>
-        <div class="feature-desc">Velas de Shabat Janucá a las 16:05. Tiempo de sobra para duchas, ordenar y recibir el Shabat en calma.</div>
-      </div>
-    </div>
-
-    <div class="inline-alert">
-      <strong>Tarifas Hamat Gader:</strong> Entrada general ~₪108 (con cupones de clubes baja a ~₪65-75 c/u). Si se prefiere no pagar entrada el viernes, el paseo por el puerto de Ein Gev y mirador es 100% gratuito.
     </div>
   </section>
 
-  <!-- ==================== SLIDE 13: CLIMA Y EQUIPAJE ==================== -->
-  <section class="card" id="clima">
-    <span class="card-tagline"><span>🌦️</span> Condiciones de Diciembre</span>
-    <h2 class="card-title">Pronóstico Típico & Qué Empacar</h2>
-    <p class="card-subtitle">Días templados y luminosos; tardes y noches frías y ventosas ideales para fogatas.</p>
+  
+<!-- ==================== LOGÍSTICA BAR MITZVÁ ==================== -->
+  <section class="card" id="barmitzva">
+    <span class="card-tagline"><span>🎧</span> Hito Clave de la Noche</span>
+    <h2 class="card-title">Bar Mitzvá de David en Salón LUNA</h2>
+    <p class="card-subtitle">Fecha confirmada: Jueves 10-dic, 19:00 hrs. Salida directa desde Ein Zivan a las 15:15, llegada 17:30 (buffer) y montaje de audio a las 18:00 hrs.</p>
 
-    <div class="photo-container">
-      <img src="img/cover_golan.jpg" alt="Montañas del Golán en invierno" loading="lazy">
-      <span class="photo-badge">Clima & Preparativos</span>
-      <div class="photo-caption">Ambiente fresco, cielos limpios y aire puro en diciembre.</div>
+    <div class="inline-alert" style="margin-top: 0; margin-bottom: 14px; background: rgba(34, 197, 94, 0.15); border: 1px solid rgba(34, 197, 94, 0.3); color: #86efac;">
+      <strong>✓ Dato 100% Confirmado:</strong> Fiesta a las 19:00 hrs en Salón LUNA (Or Akiva). Salida directa 15:15, llegada 17:30 (buffer), montaje 18:00.
     </div>
+
+    <!-- Ficha del Salón -->
+    <div class="scenario-card" style="border-left: 4px solid var(--sky);">
+      <div class="scenario-header">
+        <div>
+          <strong style="color: #ffffff; font-size: 16px;">SALÓN LUNA (OR AKIVA)</strong>
+          <div style="font-size: 13px; color: var(--text-muted);">לונה אירועים • Or Akiva</div>
+        </div>
+        <span class="scenario-badge" style="background: rgba(34, 197, 94, 0.2); border: 1px solid rgba(34, 197, 94, 0.4); color: #4ade80;">18:00 Montaje</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 8px; font-size: 14px; color: #e2e8f0;">
+        <div><strong>📍 Dirección:</strong> רחוב האילן 3–4, אור עקיבא (HaIlan St 3-4, Or Akiva).</div>
+        <div><strong>🕒 Horarios:</strong> 17:30 Llegada buffer • 18:00 Montaje de música • 19:00 Inicio fiesta.</div>
+        <div><strong>🕯️ 7ª Vela de Janucá:</strong> Se prende al <strong>volver a casa en Harish tras la fiesta</strong> en familia (no en el camino).</div>
+      </div>
+      <a href="https://www.waze.com/ul?ll=32.515714,34.922477&navigate=yes" target="_blank" class="btn-action btn-primary" style="margin-top: 14px; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 8px;">
+        <span>🚗</span> Abrir Salón LUNA en Waze ↗
+      </a>
+    </div>
+
+    <!-- Cronograma Único de Regreso -->
+    <div class="scenario-card" style="border-left: 4px solid var(--gold-light);">
+      <div class="scenario-header">
+        <div>
+          <strong style="color: #ffffff; font-size: 16px;">PLAN ÚNICO DIRECTO A LUNA</strong>
+          <div style="font-size: 13px; color: var(--text-muted);">Viaje directo sin pasar por Harish</div>
+        </div>
+        <span class="scenario-badge" style="background: rgba(245, 158, 11, 0.2); border: 1px solid rgba(245, 158, 11, 0.4); color: var(--gold-light);">Fiesta 19:00</span>
+      </div>
+      <div class="timeline" style="gap: 8px; margin: 0;">
+        <div class="timeline-item"><div class="timeline-time">13:45</div><div class="timeline-sub"><strong>De Karina (Ein Zivan):</strong> Taller infantil de chocolate y cambio a ropa de fiesta.</div></div>
+        <div class="timeline-item"><div class="timeline-time">15:15</div><div class="timeline-sub">Salida directa desde Ein Zivan hacia Or Akiva (~2 h con tráfico de jueves).</div></div>
+        <div class="timeline-item"><div class="timeline-time" style="background: rgba(56, 189, 248, 0.25); color: var(--sky);">17:30</div><div class="timeline-sub"><strong>Llegada a LUNA (Or Akiva):</strong> 30 min de buffer previo sin estrés.</div></div>
+        <div class="timeline-item"><div class="timeline-time" style="background: rgba(56, 189, 248, 0.25); color: var(--sky);">18:00</div><div class="timeline-sub"><strong>En LUNA, Or Akiva:</strong> Alan y familia en el salón (montaje de música).</div></div>
+        <div class="timeline-item"><div class="timeline-time" style="background: rgba(34, 197, 94, 0.25); color: #4ade80;">19:00</div><div class="timeline-sub"><strong>Comienza el Bar Mitzvá de David:</strong> ¡Gran fiesta familiar!</div></div>
+        <div class="timeline-item"><div class="timeline-time" style="background: rgba(245, 158, 11, 0.25); color: #fef08a;">Noche</div><div class="timeline-sub"><strong>Vuelta a Harish:</strong> 7ª Vela de Janucá en casa con la familia tras el evento.</div></div>
+      </div>
+    </div>
+  </section>
+
+  
+<!-- ==================== CLIMA Y EQUIPAJE ==================== -->
+  <section class="card" id="clima">
+    <span class="card-tagline"><span>🌤️</span> Entorno y Clima</span>
+    <h2 class="card-title">Moshav Natur, Clima y Checklist</h2>
+    <p class="card-subtitle">Natur se ubica a ~350m de altitud en el Golán sur, combinando naturaleza viva y tranquilidad comunitaria.</p>
 
     <div class="stacked-group">
       <div class="feature-card">
-        <div class="feature-header"><span>🌡️</span> Ma'ale Gamla (cota media)</div>
-        <div class="feature-value">Día 17–19°C | Noche 8–10°C</div>
-        <div class="feature-desc">Agradable con sol; fresco y con brisa en cuanto cae la tarde. Sin riesgo de nieve.</div>
+        <div class="feature-header"><span>🏡</span> Moshav Natur (Comunidad Mixta)</div>
+        <div class="feature-value">Convivencia Religiosa-Secular</div>
+        <div class="feature-desc">Comunidad integradora con sinagoga comunitaria, minimarket (צרכניה) y Mechinat Natur. Ambiente seguro y familiar.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-header"><span>⛰️</span> Alto Golán (Ein Zivan)</div>
-        <div class="feature-value">Día 11–13°C | Noche 4–6°C</div>
-        <div class="feature-desc">Más frío. Se agradece la calefacción y los recintos cerrados como la chocolatería.</div>
+        <div class="feature-header"><span>🌡️</span> Temperaturas Esperadas 9–10 Dic</div>
+        <div class="feature-value">Día 15–17 °C • Noche 6–8 °C</div>
+        <div class="feature-desc">Atardecer exacto a las <strong>16:35 hrs</strong>. Viento fresco de meseta baja la sensación térmica nocturna a ~5 °C.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-header"><span>⛽</span> Bencineras Más Cercanas</div>
+        <div class="feature-value">Hispin (7 km) • Katzrin (17 km)</div>
+        <div class="feature-desc">En Natur no hay bencinera propia; cargar en Harish antes de salir o en la estación de Hispin/Avnei Eitan a solo 8 minutos.</div>
       </div>
     </div>
 
-    <h3 style="font-size: 18px; font-weight: 700; color: var(--gold-light); margin: 18px 0 10px 0;">Checklist Recomendado:</h3>
-    <ul class="check-list">
-      <li class="check-item"><span class="check-box">✓</span> <div><strong>Vestimenta en capas (estilo cebolla):</strong> Camisetas térmicas, polar y parkas cortaviento/impermeables.</div></li>
-      <li class="check-item"><span class="check-box">✓</span> <div><strong>Accesorios de abrigo:</strong> Gorros de lana, bufandas y guantes para los niños para las velitas y fogatas nocturnas.</div></li>
-      <li class="check-item"><span class="check-box">✓</span> <div><strong>Kit de Janucá:</strong> Januquiá en caja de vidrio o farol cerrado, aceite de oliva/velas, fósforos largos y sevivonim.</div></li>
-      <li class="check-item"><span class="check-box">✓</span> <div><strong>Equipamiento útil:</strong> Linternas frontales para el huerto, termos para café/té caliente y juegos de mesa.</div></li>
+    <div style="margin-top: 14px; font-weight: 700; font-size: 14px; color: var(--gold-light);">Checklist para la Yurta & Bar Mitzvá:</div>
+    <ul class="check-list" style="margin-top: 8px;">
+      <li class="check-item"><span class="check-box">✓</span> <div><strong>Ropa de cama y toallas:</strong> Llevar sábanas/sacos propios y toallas familiares (por confirmar con Orly).</div></li>
+      <li class="check-item"><span class="check-box">✓</span> <div><strong>Abrigo por capas:</strong> Polar, gorros y cortavientos para disfrutar el fogón nocturno y senderos.</div></li>
+      <li class="check-item"><span class="check-box">✓</span> <div><strong>Janucá & Kosher:</strong> Januquiá con farol de vidrio antiviento, platos/cubiertos desechables y papel aluminio doble para la parrilla.</div></li>
+      <li class="check-item"><span class="check-box">✓</span> <div><strong>Ropa de fiesta en perchas:</strong> Mudas listas en el auto para cambiarse en De Karina a las 14:45 hrs antes de salir a LUNA.</div></li>
+      <li class="check-item"><span class="check-box">✓</span> <div><strong>Equipo de sonido Alan:</strong> Controladora DJ, cables, adaptadores y micrófonos probados.</div></li>
     </ul>
   </section>
-
-  <!-- ==================== SLIDE 14: PRESUPUESTO EN TARJETAS ==================== -->
+  
+<!-- ==================== PRESUPUESTO CONSOLIDADO ==================== -->
   <section class="card" id="presupuesto">
     <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
-      <span class="card-tagline"><span>💰</span> Transparencia Total</span>
-      <div class="price-pill"><span class="currency">₪2.766</span> <span class="note">total estimado</span></div>
+      <span class="card-tagline"><span>💰</span> Transparencia Total v4</span>
+      <div class="price-pill"><span class="currency">~₪1.600</span> <span class="note">total familia</span></div>
     </div>
-    <h2 class="card-title">Presupuesto y Desglose de Costos</h2>
-    <p class="card-subtitle">Cotización calculada para 5 huéspedes (2 adultos + 3 niños de pago; el niño de 3 años entra gratis en alojamiento y parques).</p>
+    <h2 class="card-title">Presupuesto y Desglose v4</h2>
+    <p class="card-subtitle">Cotización real con tarifa confirmada de Airbnb para la yurta en Moshav Natur (el niño de 3 años no paga en parques).</p>
 
-    <!-- Tarjetas Apiladas del Desglose de Costos -->
     <div class="cost-group">
       <div class="cost-card">
         <div class="cost-header-row">
-          <span class="cost-concept">🚐 Alojamiento: Olive GlampVan</span>
-          <span class="cost-amount">₪1.434</span>
+          <span class="cost-concept">⛺ Yurta en Moshav Natur (1 noche)</span>
+          <span class="cost-amount" style="color: var(--gold-light);">₪880</span>
         </div>
-        <div class="cost-detail">2 noches (9 al 11 dic) en Ma'ale Gamla. Tarifa directa Airbnb sin cobro de limpieza extra.</div>
+        <div class="cost-detail">Tarifa oficial Airbnb BookIt en vivo para 6 huéspedes (limpieza incluida). Verificado disponible sin bloqueos.</div>
       </div>
 
       <div class="cost-card">
         <div class="cost-header-row">
           <span class="cost-concept">⛽ Bencina (Auto propio)</span>
-          <span class="cost-amount">₪204</span>
+          <span class="cost-amount">₪180</span>
         </div>
-        <div class="cost-detail">~340 km totales (Harish ↔ Golán + paseos locales) a 8 l/100km @ ~₪7,50/litro.</div>
+        <div class="cost-detail">~287 km de ruta + holgura (~300 km totales) @ 8 l/100km y ~₪7,50/litro.</div>
       </div>
 
       <div class="cost-card">
         <div class="cost-header-row">
-          <span class="cost-concept">🦅 Entrada Reserva Gamla</span>
+          <span class="cost-concept">🦅 Reserva Gamla (Cascada 51m)</span>
           <span class="cost-amount">₪98</span>
         </div>
-        <div class="cost-detail">Tarifas oficiales INPA: 2 adultos (₪56) + 3 niños (₪42). Niño de 3 años gratis (¡o $0 con pase Matmón!).</div>
+        <div class="cost-detail">Tarifas INPA: 2 adultos (₪56) + 3 niños (₪42). Menor de 3 años gratis (¡o $0 con Matmón!).</div>
       </div>
 
       <div class="cost-card">
@@ -1403,166 +1353,164 @@
           <span class="cost-concept">🏛️ Parque Talmúdico Katzrin</span>
           <span class="cost-amount">₪110</span>
         </div>
-        <div class="cost-detail">Entrada combinada: 2 adultos (₪50) + 3 niños (₪60). Niño de 3 años gratis.</div>
+        <div class="cost-detail">Prensa de aceitunas de Janucá: 2 adultos (₪50) + 3 niños (₪60). Menor 3 años gratis.</div>
       </div>
 
       <div class="cost-card">
         <div class="cost-header-row">
-          <span class="cost-concept">🍫 Taller Chocolate De Karina</span>
-          <span class="cost-amount">₪320</span>
+          <span class="cost-concept">🍫 Taller Chocolatería De Karina</span>
+          <span class="cost-amount">₪225</span>
         </div>
-        <div class="cost-detail">Taller infantil para 3 niños (~₪75 c/u) + visita adultos y guagua (~₪95).</div>
+        <div class="cost-detail">3 talleres infantiles (~₪75 c/u), sin cafetería.</div>
       </div>
 
       <div class="cost-card">
         <div class="cost-header-row">
-          <span class="cost-concept">🛒 Comida Kosher & Provisiones</span>
-          <span class="cost-amount">₪450</span>
+          <span class="cost-concept">🛒 Hot dogs (comida kosher)</span>
+          <span class="cost-amount">₪80</span>
         </div>
-        <div class="cost-detail">Llevado de casa + compras frescas en supermercado Mehadrin Bnei Yehuda.</div>
+        <div class="cost-detail">Hot dogs: salchichas kosher, pan y ketchup. Desayuno y almuerzo del jueves, de casa.</div>
       </div>
 
       <div class="cost-card">
         <div class="cost-header-row">
-          <span class="cost-concept">🪵 Leña de fogata, extras y café</span>
-          <span class="cost-amount">₪150</span>
+          <span class="cost-concept">🪵 Carbón</span>
+          <span class="cost-amount">₪30</span>
         </div>
-        <div class="cost-detail">Bolsa de leña seca para el fire pit, malvaviscos kosher, imprevistos.</div>
+        <div class="cost-detail">1 bolsa de carbón. La leña del fire pit la deja la anfitriona (por confirmar).</div>
       </div>
 
-      <!-- Tarjeta Total Destacada -->
       <div class="cost-total-card">
         <div class="cost-total-header">
-          <span class="cost-total-title">Total Plan Base</span>
-          <span class="cost-total-amount">₪2.766</span>
+          <span class="cost-total-title">Total Estimado v4</span>
+          <span class="cost-total-amount">~₪1.600</span>
         </div>
         <div class="cost-total-note">
-          Plan con paseo libre en Kinneret el viernes. Si se opta por Hamat Gader con cupones familiares, el total sube a ~₪3.150 ILS.
+          Rango global: <strong>₪1.500 a ₪1.700 ILS</strong>. Si la familia cuenta con pase Matmón, el total baja a ~₪1.500 ILS.
         </div>
-      </div>
-    </div>
-
-    <div class="stacked-group" style="margin-top: 16px;">
-      <div class="feature-card">
-        <div class="feature-header"><span>📊</span> Rango Estimado Global</div>
-        <div class="feature-value">₪2.500 a ₪3.200 ILS</div>
-        <div class="feature-desc">El límite inferior aplica si la familia tiene tarjeta Matmón de parques; el superior si se incluye Hamat Gader con entradas completas el viernes.</div>
-      </div>
-      <div class="feature-card">
-        <div class="feature-header"><span>💳</span> Flexibilidad de Pago</div>
-        <div class="feature-value">Cancelación $0 hasta 1-Dic</div>
-        <div class="feature-desc">Permite congelar la reserva hoy mismo en Airbnb sin riesgo financiero ante imprevistos climáticos o escolares.</div>
       </div>
     </div>
   </section>
-
-  <!-- ==================== SLIDE 15: CRONOGRAMA COMPLETO ==================== -->
+  
+<!-- ==================== CRONOGRAMA COMPLETO ==================== -->
   <section class="card" id="cronograma">
-    <span class="card-tagline"><span>⏱️</span> Organización Impecable</span>
-    <h2 class="card-title">Cronograma Completo del Viaje</h2>
-    <p class="card-subtitle">Planificación horaria diseñada para no correr en ningún momento y respetar cada hito de Janucá y Shabat.</p>
+    <span class="card-tagline"><span>⏱️</span> Planificación Paso a Paso v4</span>
+    <h2 class="card-title">Cronograma Completo Hora a Hora</h2>
+    <p class="card-subtitle">Estructurado al minuto para disfrutar sin apuros y cumplir con todos los hitos.</p>
 
     <!-- Miércoles -->
     <div class="feature-card" style="margin-bottom: 14px;">
       <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border-card-inner); padding-bottom: 8px; margin-bottom: 10px;">
         <span style="font-weight: 800; color: var(--gold-light); font-size: 16px;">MIÉRCOLES 9 DIC</span>
-        <span style="font-size: 16px; background: rgba(245, 158, 11, 0.2); padding: 4px 10px; border-radius: 10px; color: #fef08a; font-weight: 700;">6ª Vela</span>
+        <span style="font-size: 13px; background: rgba(245, 158, 11, 0.2); padding: 4px 10px; border-radius: 10px; color: #fef08a; font-weight: 700;">6ª Vela en Natur</span>
       </div>
       <div class="timeline" style="gap: 8px; margin: 0;">
-        <div class="timeline-item"><div class="timeline-time">14:15</div><div class="timeline-sub">Salida desde Harish en auto.</div></div>
-        <div class="timeline-item"><div class="timeline-time">16:00</div><div class="timeline-sub">Llegada y check-in en Olive GlampVan.</div></div>
-        <div class="timeline-item"><div class="timeline-time">16:35</div><div class="timeline-sub"><strong>Puesta de sol:</strong> 6ª vela afuera en caja de vidrio.</div></div>
-        <div class="timeline-item"><div class="timeline-time">17:15</div><div class="timeline-sub">Fogata, sufganiot y cena caliente.</div></div>
-        <div class="timeline-item"><div class="timeline-time">20:00</div><div class="timeline-sub">Noche tibia en la caravana climatizada.</div></div>
+        <div class="timeline-item"><div class="timeline-time">14:00</div><div class="timeline-sub">Salida puntual desde Harish en auto (115 km, ~1h 45m).</div></div>
+        <div class="timeline-item"><div class="timeline-time">15:45</div><div class="timeline-sub"><strong>Llegada con luz solar plena a Natur:</strong> Check-in y reconocimiento de la finca ecológica (50 min antes del atardecer).</div></div>
+        <div class="timeline-item"><div class="timeline-time">16:35</div><div class="timeline-sub"><strong>Puesta de sol:</strong> 6ª vela afuera con farol protector de vidrio frente al lago.</div></div>
+        <div class="timeline-item"><div class="timeline-time">17:15</div><div class="timeline-sub">Hot dogs a la parrilla en el patio de la yurta.</div></div>
+        <div class="timeline-item"><div class="timeline-time">18:30</div><div class="timeline-sub">Fogata rústica (fire pit): leña, malvaviscos y canciones de Janucá.</div></div>
+        <div class="timeline-item"><div class="timeline-time">21:00</div><div class="timeline-sub">Noche tibia en la yurta con AC calor y estufa a leña.</div></div>
       </div>
     </div>
 
     <!-- Jueves -->
-    <div class="feature-card" style="margin-bottom: 14px;">
-      <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border-card-inner); padding-bottom: 8px; margin-bottom: 10px;">
-        <span style="font-weight: 800; color: var(--gold-light); font-size: 16px;">JUEVES 10 DIC</span>
-        <span style="font-size: 16px; background: rgba(245, 158, 11, 0.2); padding: 4px 10px; border-radius: 10px; color: #fef08a; font-weight: 700;">7ª Vela</span>
-      </div>
-      <div class="timeline" style="gap: 8px; margin: 0;">
-        <div class="timeline-item"><div class="timeline-time">08:30</div><div class="timeline-sub">Desayuno campestre entre olivos.</div></div>
-        <div class="timeline-item"><div class="timeline-time">09:30</div><div class="timeline-sub"><strong>Reserva Gamla:</strong> Buitres y cascada (15m auto).</div></div>
-        <div class="timeline-item"><div class="timeline-time">12:15</div><div class="timeline-sub"><strong>Pueblo Katzrin:</strong> Prensa de aceite talmúdica.</div></div>
-        <div class="timeline-item"><div class="timeline-time">14:45</div><div class="timeline-sub"><strong>De Karina:</strong> Taller de chocolate en Ein Zivan.</div></div>
-        <div class="timeline-item"><div class="timeline-time">16:35</div><div class="timeline-sub"><strong>Puesta de sol:</strong> 7ª vela en el huerto.</div></div>
-        <div class="timeline-item"><div class="timeline-time">18:00</div><div class="timeline-sub">Torneo de Dreidel y parrillada familiar.</div></div>
-      </div>
-    </div>
-
-    <!-- Viernes -->
     <div class="feature-card">
       <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border-card-inner); padding-bottom: 8px; margin-bottom: 10px;">
-        <span style="font-weight: 800; color: #34d399; font-size: 16px;">VIERNES 11 DIC</span>
-        <span style="font-size: 16px; background: rgba(16, 185, 129, 0.2); padding: 4px 10px; border-radius: 10px; color: #a7f3d0; font-weight: 700;">Shabat Janucá</span>
+        <span style="font-weight: 800; color: var(--gold-light); font-size: 16px;">JUEVES 10 DIC</span>
+        <span style="font-size: 13px; background: rgba(56, 189, 248, 0.2); padding: 4px 10px; border-radius: 10px; color: var(--sky); font-weight: 700;">Directo al Bar Mitzvá</span>
       </div>
       <div class="timeline" style="gap: 8px; margin: 0;">
-        <div class="timeline-item"><div class="timeline-time">08:30</div><div class="timeline-sub">Desayuno y armado de bolsos.</div></div>
-        <div class="timeline-item"><div class="timeline-time">09:30</div><div class="timeline-sub">Check-out y bajada hacia el Kinneret Sur.</div></div>
-        <div class="timeline-item"><div class="timeline-time">10:00</div><div class="timeline-sub"><strong>Paseo:</strong> Hamat Gader o muelle de Ein Gev.</div></div>
-        <div class="timeline-item"><div class="timeline-time">11:45</div><div class="timeline-sub">Salida en auto rumbo a Harish (95 km).</div></div>
-        <div class="timeline-item"><div class="timeline-time" style="background: rgba(16, 185, 129, 0.2); color: #34d399;">13:10</div><div class="timeline-sub"><strong>Llegada a Harish:</strong> ¡Listo con holgura!</div></div>
-        <div class="timeline-item"><div class="timeline-time" style="color: #e2e8f0;">16:05</div><div class="timeline-sub">Velas de Shabat Janucá en casa.</div></div>
+        <div class="timeline-item"><div class="timeline-time">08:00</div><div class="timeline-sub">Desayuno familiar en la cocina de la yurta y bolsos listos.</div></div>
+        <div class="timeline-item"><div class="timeline-time">09:00</div><div class="timeline-sub"><strong>Checkout Yurta:</strong> Cargar maletas y ropa de fiesta en el maletero. Solo 8 min a Gamla.</div></div>
+        <div class="timeline-item"><div class="timeline-time">09:15</div><div class="timeline-sub"><strong>Reserva Gamla (6 km):</strong> Mirador buitres y cascada de 51m (hasta 10:45). Abierto desde 08:00.</div></div>
+        <div class="timeline-item"><div class="timeline-time">11:05</div><div class="timeline-sub"><strong>Pueblo Katzrin (17.5 km):</strong> Prensa de aceite de Janucá y pitas (hasta 12:35).</div></div>
+        <div class="timeline-item"><div class="timeline-time">12:35</div><div class="timeline-sub"><strong>Almuerzo familiar:</strong> Comida de casa en el merendero (hasta 13:20).</div></div>
+        <div class="timeline-item"><div class="timeline-time">13:45</div><div class="timeline-sub"><strong>De Karina Ein Zivan (22 km):</strong> Taller infantil de chocolate. <em>A las 14:45 cambiarse a ropa de fiesta.</em></div></div>
+        <div class="timeline-item"><div class="timeline-time">15:15</div><div class="timeline-sub"><strong>Salida directa a Or Akiva:</strong> ~1h 55m con tráfico de jueves por R91/90/65/4 (126 km).</div></div>
+        <div class="timeline-item"><div class="timeline-time" style="background: rgba(56, 189, 248, 0.25); color: var(--sky);">17:30</div><div class="timeline-sub"><strong>Llegada a Salón LUNA (Or Akiva):</strong> 30 min de buffer previo sin estrés.</div></div>
+        <div class="timeline-item"><div class="timeline-time" style="background: rgba(56, 189, 248, 0.25); color: var(--sky);">18:00</div><div class="timeline-sub"><strong>En Salón LUNA:</strong> Alan y la familia en el salón; montaje y ecualización de equipos de música.</div></div>
+        <div class="timeline-item"><div class="timeline-time" style="background: rgba(34, 197, 94, 0.25); color: #4ade80;">19:00</div><div class="timeline-sub"><strong>Bar Mitzvá de David:</strong> ¡Comienza la fiesta! (7ª vela en casa tras volver).</div></div>
       </div>
     </div>
   </section>
+  
+<!-- ==================== QUÉ CAMBIÓ EN V4 ==================== -->
+  <section class="card">
+    <span class="card-tagline"><span>🔄</span> Comparativa</span>
+    <h2 class="card-title">Qué Cambió en v4</h2>
+    <p class="card-subtitle">Ajustes estratégicos para el cambio a la Yurta de Moshav Natur.</p>
 
-  <!-- ==================== SLIDE 16: LO QUE FALTA PARA RESERVAR ==================== -->
+    <ul class="check-list">
+      <li class="check-item"><span class="check-box">1</span> <div><strong>Alojamiento principal en Yurta (Moshav Natur):</strong> Yurta mongola en granja ecológica Netora para 6 personas con 10 camas individuales, verificada en Airbnb a <strong>₪880 ILS total</strong> disponible para el 9→10 dic.</div></li>
+      <li class="check-item"><span class="check-box">2</span> <div><strong>Calefacción dual para invierno:</strong> Confort térmico asegurado para la noche en el Golán (~5 °C) con aire acondicionado frío/calor + estufa/chimenea rústica de hierro fundido a leña.</div></li>
+      <li class="check-item"><span class="check-box">3</span> <div><strong>Ruta optimizada de Sur a Norte:</strong> Natur está a solo 6.1 km (8 min) de Gamla; el circuito fluye sin retrocesos hacia Katzrin y Ein Zivan, sumando ~287 km totales de viaje.</div></li>
+      <li class="check-item"><span class="check-box">4</span> <div><strong>Olive GlampVan en respaldo:</strong> Se mantiene la van de Ma'ale Gamla como opción de respaldo, sumando también Townhouse en Katzrin (₪890).</div></li>
+      <li class="check-item"><span class="check-box">5</span> <div><strong>Presupuesto total verificado:</strong> Se actualiza el total familiar a <strong>~₪1.600 ILS</strong> con cotizaciones reales en vivo.</div></li>
+    </ul>
+  </section>
+  
+<!-- ==================== POR CONFIRMAR ==================== -->
+  <section class="card">
+    <span class="card-tagline"><span>📌</span> Pendientes</span>
+    <h2 class="card-title">Puntos de Coordinación con el Anfitrión</h2>
+    <p class="card-subtitle">Detalles menores a confirmar con Orly (anfitriona de la yurta en Airbnb).</p>
+
+    <ul class="check-list">
+      <li class="check-item"><span class="step-number" style="background: rgba(34, 197, 94, 0.2); color: #4ade80; border-color: rgba(34, 197, 94, 0.4);">✓</span> <div><strong>Alojamiento Verificado y Disponible:</strong> Yurta en Moshav Natur (₪880) cotizada en vivo en Airbnb sin bloqueos.</div></li>
+      <li class="check-item"><span class="step-number" style="background: rgba(34, 197, 94, 0.2); color: #4ade80; border-color: rgba(34, 197, 94, 0.4);">✓</span> <div><strong>Bar Mitzvá de David CONFIRMADO:</strong> Salón LUNA (HaIlan 3–4, Or Akiva), fiesta 19:00, montaje 18:00. Salida directa 15:15 desde Ein Zivan.</div></li>
+      <li class="check-item"><span class="step-number">?</span> <div><strong>Hora exacta de Check-out:</strong> Habitual 10:00 u 11:00 AM (<em>por confirmar con el anfitrión</em>).</div></li>
+      <li class="check-item"><span class="step-number">?</span> <div><strong>Ropa de cama y toallas:</strong> Confirmar si suministran sábanas/toallas o llevar propias (marcado Essentials no incluido).</div></li>
+      <li class="check-item"><span class="step-number">?</span> <div><strong>Leña y portón de acceso:</strong> Consultar si la leña para la estufa/fogón está incluida y coordinar llamado al llegar a Natur.</div></li>
+      <li class="check-item"><span class="step-number">?</span> <div><strong>Reservar Chocolatería De Karina:</strong> Taller infantil confirmado de 13:45 a 15:00. Reservar previamente (tel: 04-699-3622).</div></li>
+    </ul>
+  </section>
+  
+<!-- ==================== PASOS PARA RESERVAR ==================== -->
   <section class="card" id="reserva">
     <span class="card-tagline"><span>🚀</span> Plan de Acción Inmediato</span>
-    <h2 class="card-title">Lo que Falta para Reservar</h2>
-    <p class="card-subtitle">Solo 4 pasos sencillos para asegurar estas fechas codiciadas de vacaciones de Janucá.</p>
+    <h2 class="card-title">Pasos Concretos para Concretar el Viaje v4</h2>
+    <p class="card-subtitle">Solo 3 pasos sencillos para asegurar esta escapada.</p>
 
-    <div class="photo-container">
-      <img src="img/olive_glampvan_dining.jpg" alt="Interior acogedor de la caravana con mesa convertible" loading="lazy">
-      <span class="photo-badge">Paso Final</span>
-      <div class="photo-caption">Mesa de comedor que se abate fácilmente como 5ª cama para el niño pequeño.</div>
+    <div class="photo-container" style="height: 200px;">
+      <img src="img/yurta/yurta_03.jpg" alt="Yurta iluminada de noche" loading="lazy">
+      <span class="photo-badge">Noche Estrellada</span>
+      <div class="photo-caption">Yurta en Moshav Natur con vista a las luces nocturnas de Tiberias.</div>
     </div>
 
     <ul class="check-list">
       <li class="check-item">
         <span class="step-number">1</span>
         <div>
-          <strong style="color: #ffffff; font-size: 17px;">Reservar en Airbnb el Olive GlampVan:</strong>
-          <div style="font-size: 16px; color: #94a3b8; margin-top: 4px;">Seleccionar 4 huéspedes (precio ₪1.434 por las 2 noches) y fijar fechas del 9 al 11 dic 2026. Cancelación gratuita disponible hasta el 1 de diciembre.</div>
+          <strong style="color: #ffffff; font-size: 16px;">Reservar Yurta en Moshav Natur en Airbnb:</strong>
+          <div style="font-size: 14.5px; color: #94a3b8; margin-top: 4px;">Enviar solicitud de reserva para el 9→10 de diciembre (₪880 ILS total verificado para 6 huéspedes).</div>
         </div>
       </li>
       <li class="check-item">
         <span class="step-number">2</span>
         <div>
-          <strong style="color: #ffffff; font-size: 17px;">Enviar mensaje al host (Ori):</strong>
-          <div style="font-size: 16px; color: #94a3b8; margin-top: 4px;">Avisarle cordialmente que viajan 2 adultos y 4 niños (el menor duerme en el comedor abatible), consultando por la calefacción y uso de la cocinilla kosher.</div>
+          <strong style="color: #ffffff; font-size: 16px;">Mensaje a Orly (Anfitriona):</strong>
+          <div style="font-size: 14.5px; color: #94a3b8; margin-top: 4px;">Confirmar hora exacta de check-out, consultar si proveen sábanas/toallas (o llevar propias), leña para el fogón y coordinar portón de Natur.</div>
         </div>
       </li>
       <li class="check-item">
         <span class="step-number">3</span>
         <div>
-          <strong style="color: #ffffff; font-size: 17px;">Agendar el Taller en De Karina:</strong>
-          <div style="font-size: 16px; color: #94a3b8; margin-top: 4px;">Reservar 3 cupos infantiles para el jueves 10-dic a las 14:45 hrs en su web oficial (de-karina.co.il) para no quedarse sin cupo en Janucá.</div>
-        </div>
-      </li>
-      <li class="check-item">
-        <span class="step-number">4</span>
-        <div>
-          <strong style="color: #ffffff; font-size: 17px;">Preparar el kit de Janucá en casa:</strong>
-          <div style="font-size: 16px; color: #94a3b8; margin-top: 4px;">Comprar o alistar la caja de vidrio cerrada para encender la januquiá en el patio y cocinar con anticipación los platos kosher congelados.</div>
+          <strong style="color: #ffffff; font-size: 16px;">Reservar Taller en De Karina (Ein Zivan):</strong>
+          <div style="font-size: 14.5px; color: #94a3b8; margin-top: 4px;">Reservar cupo para 3 niños en el taller de chocolate del jueves a las 13:45 hrs. Llevar la ropa de fiesta en el auto para cambiarse allí antes de salir a las 15:15.</div>
         </div>
       </li>
     </ul>
 
-    <a href="https://www.airbnb.com/rooms/1365122226829793190" target="_blank" class="btn-action btn-primary" style="margin-top: 16px;">
-      Abrir Olive GlampVan en Airbnb ↗
+    <a href="https://www.airbnb.com/rooms/49536207?check_in=2026-12-09&check_out=2026-12-10&adults=2&children=4" target="_blank" class="btn-action btn-primary" style="margin-top: 16px;">
+      Abrir y Reservar Yurta en Airbnb (₪880) ↗
     </a>
     <a href="#inicio" class="btn-action btn-secondary">
       Volver al inicio ↑
     </a>
   </section>
-
   <footer>
-    Janucá 5787 • Propuesta Familiar Privada • Golán 2026
+    Janucá 5787 • Propuesta Familiar v4 • Moshav Natur 2026
   </footer>
 
 </div>
